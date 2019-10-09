@@ -5,8 +5,8 @@ namespace Kata
     public class StringCalculator
     {
         private const char DEFAULT_DELIMITER = ',';
-
-        public static int Add(String numbers)
+        
+        public int Add(String numbers)
         {
             if (numbers.Length == 0) return 0;
             char delimiter = extractDelimiter(numbers);
