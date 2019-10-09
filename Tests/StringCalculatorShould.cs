@@ -42,7 +42,7 @@ namespace Tests
         }
         
         [TestMethod]
-        public void throw_exception_when_string_has_negative_1()
+        public void throw_exception_when_string_has_negative_number()
         {
             try
             {
@@ -53,11 +53,7 @@ namespace Tests
             {
                 Assert.AreEqual(e.Message, "negatives not allowed: -1");
             }
-        }
 
-        [TestMethod]
-        public void throw_exception_when_string_has_negative_4()
-        {
             try
             {
                 StringCalculator.Add("1,-4,5");
