@@ -18,5 +18,11 @@ namespace Tests
             Assert.AreEqual(1, StringCalculator.Add("1"));
             Assert.AreEqual(2, StringCalculator.Add("2"));
         }
+
+        [TestMethod]
+        public void return_sum_number_a_b_when_string_number_a_b()
+        {
+            Assert.AreEqual(3, StringCalculator.Add("1,2"));
+        }
     }
 }
