@@ -7,27 +7,27 @@ namespace Kata
         public static int Add(String numbers)
         {
             if (numbers.Length == 0) return 0;
-            String delimiter;
+            char delimiter;
             if (numbers.Contains("//"))
             {
-                delimiter = numbers[2] + "";
+                delimiter = numbers[2];
                 numbers = numbers.Substring(4);
             }
             else
             {
-                delimiter = ",";
+                delimiter = ',';
             }
             return sumOf(extractNumbers(correctFormat(numbers, delimiter), delimiter));
         }
 
-        private static string[] extractNumbers(string numbers, string delimiter)
+        private static string[] extractNumbers(string numbers, char delimiter)
         {
-            return numbers.Split(new String[] {delimiter}, StringSplitOptions.None);
+            return numbers.Split(new char[] {delimiter}, StringSplitOptions.None);
         }
 
-        private static String correctFormat(string numbers, String delimiter)
+        private static String correctFormat(string numbers, char delimiter)
         {
-            return numbers.Replace("\n", delimiter);
+            return numbers.Replace('\n', delimiter);
         }
 
         private static int sumOf(String[] numbers)
