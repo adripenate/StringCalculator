@@ -11,7 +11,7 @@ namespace Kata
             if (numbers.Contains("//"))
             {
                 delimiter = numbers[2] + "";
-                numbers = numbers.Substring(3).Trim();
+                numbers = numbers.Substring(4);
             }
             else
             {
