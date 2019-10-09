@@ -64,5 +64,19 @@ namespace Tests
                 Assert.AreEqual(e.Message, "negatives not allowed: -4");
             }
         }
+        
+        [TestMethod]
+        public void throw_exception_when_string_has_multiples_negative_numbers()
+        {
+            try
+            {
+                StringCalculator.Add("1,-4,3,-1");
+                Assert.Fail();
+            }
+            catch (Exception e)
+            {
+                Assert.AreEqual(e.Message, "negatives not allowed: -4 -1");
+            }
+        }
     }
 }
