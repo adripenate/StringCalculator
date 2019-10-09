@@ -84,5 +84,11 @@ namespace Tests
         {
             Assert.AreEqual(2, StringCalculator.Add("2,1001"));
         }
+
+        [TestMethod]
+        public void return_2_when_string_2_1050()
+        {
+            Assert.AreEqual(2, StringCalculator.Add("2,1050"));
+        }
     }
 }
