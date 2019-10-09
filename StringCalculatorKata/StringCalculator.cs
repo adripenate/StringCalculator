@@ -12,11 +12,16 @@ namespace Kata
                 int result = 0;
                 for(int i = 0; i < 2; i++)
                 {
-                    result += int.Parse(numbersSplit[i]);
+                    result += valueOf(numbersSplit[i]);
                 }
                 return result;
             }
-            return numbers.Length == 1 ? int.Parse(numbers) : 0;
+            return numbers.Length == 1 ? valueOf(numbers) : 0;
+        }
+
+        private static int valueOf(String number)
+        {
+            return int.Parse(number);
         }
     }
 }
