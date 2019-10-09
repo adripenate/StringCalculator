@@ -44,11 +44,16 @@ namespace Kata
             int result = 0;
             String negativeNumbers = "";
             foreach(String number in numbers){
-                if (valueOf(number) < 0) negativeNumbers += number + " ";
+                if (isNegative(number)) negativeNumbers += number + " ";
                 if(valueOf(number) <= 1000) result += valueOf(number);
             }
             if(negativeNumbers.Length > 0) throw new Exception("negatives not allowed: " + negativeNumbers.Trim());
             return result;
+        }
+
+        private static bool isNegative(string number)
+        {
+            return valueOf(number) < 0;
         }
 
         private static int valueOf(String number)
