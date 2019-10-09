@@ -1,5 +1,6 @@
 using Kata;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NSubstitute;
 using System;
 
 namespace Tests
@@ -7,38 +8,46 @@ namespace Tests
     [TestClass]
     public class StringCalculatorShould
     {
+        private StringCalculator stringCalculator;
 
+        [TestInitialize]
+        public void SetUp()
+        {
+            var repo = Substitute.For<IPersistence>();
+            stringCalculator = new StringCalculator(repo);
+        }
 
         [TestMethod]
         public void return_0_when_empty_string()
         {
-            Assert.AreEqual(0, new StringCalculator().Add(""));
+            Assert.AreEqual(0, stringCalculator.Add(""));
+            //repo.Received().save("opereacion", 1);
         }
 
         [TestMethod]
         public void return_a_number_when_string_a_number()
         {
-            Assert.AreEqual(1, new StringCalculator().Add("1"));
-            Assert.AreEqual(2, new StringCalculator().Add("2"));
+            Assert.AreEqual(1, stringCalculator.Add("1"));
+            Assert.AreEqual(2, stringCalculator.Add("2"));
         }
 
         [TestMethod]
         public void return_sum_when_string_has_unknown_amount_numbers()
         {
-            Assert.AreEqual(3, new StringCalculator().Add("1,2"));
-            Assert.AreEqual(4, new StringCalculator().Add("1,2,1"));
+            Assert.AreEqual(3, stringCalculator.Add("1,2"));
+            Assert.AreEqual(4, stringCalculator.Add("1,2,1"));
         }
 
         [TestMethod]
         public void return_6_when_string_has_new_lines_and_1_2_3()
         {
-            Assert.AreEqual(6, new StringCalculator().Add("1\n2,3"));
+            Assert.AreEqual(6, stringCalculator.Add("1\n2,3"));
         }
 
         [TestMethod]
         public void return_3_when_string_has_special_delimiter_and_1_2()
         {
-            Assert.AreEqual(3, new StringCalculator().Add("//;\n1;2"));
+            Assert.AreEqual(3, stringCalculator.Add("//;\n1;2"));
         }
         
         [TestMethod]
@@ -46,7 +55,7 @@ namespace Tests
         {
             try
             {
-                new StringCalculator().Add("1,4,-1");
+                stringCalculator.Add("1,4,-1");
                 Assert.Fail();
             }
             catch (Exception e)
@@ -56,7 +65,7 @@ namespace Tests
 
             try
             {
-                new StringCalculator().Add("1,-4,5");
+                stringCalculator.Add("1,-4,5");
                 Assert.Fail();
             }
             catch (Exception e)
@@ -70,7 +79,7 @@ namespace Tests
         {
             try
             {
-                new StringCalculator().Add("1,-4,3,-1");
+                stringCalculator.Add("1,-4,3,-1");
                 Assert.Fail();
             }
             catch (Exception e)
@@ -82,8 +91,8 @@ namespace Tests
         [TestMethod]
         public void return_sum_ignoring_numbers_bigger_than_1000()
         {
-            Assert.AreEqual(2, new StringCalculator().Add("2,1001"));
-            Assert.AreEqual(2, new StringCalculator().Add("2,1050"));
+            Assert.AreEqual(2, stringCalculator.Add("2,1001"));
+            Assert.AreEqual(2, stringCalculator.Add("2,1050"));
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Kata
 {
-    interface IPersistence
+    public interface IPersistence
     {
         void save(string operation, int result);
     }
