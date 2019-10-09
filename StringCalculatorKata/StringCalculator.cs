@@ -11,7 +11,7 @@ namespace Kata
             if (numbers.Length == 0) return 0;
             char delimiter = extractDelimiter(numbers);
             numbers = deleteDelimiterLine(numbers);
-            return sumOf(extractNumbers(correctFormat(numbers, delimiter), delimiter));
+            return sumOf(separateNumbers(correctFormat(numbers, delimiter), delimiter));
         }
 
         private static char extractDelimiter(string numbers)
@@ -34,7 +34,7 @@ namespace Kata
             return numbers.Replace('\n', delimiter);
         }
 
-        private static string[] extractNumbers(string numbers, char delimiter)
+        private static string[] separateNumbers(string numbers, char delimiter)
         {
             return numbers.Split(new char[] {delimiter}, StringSplitOptions.None);
         }
