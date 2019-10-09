@@ -7,7 +7,12 @@ namespace Kata
         public static int Add(String numbers)
         {
             if (numbers.Length == 0) return 0;
-            return sumOf(numbers.Replace("\n", ",").Split(new String[] { "," }, StringSplitOptions.None));
+            return sumOf(correctFormart(numbers).Split(new String[] { "," }, StringSplitOptions.None));
+        }
+
+        private static String correctFormart(string numbers)
+        {
+            return numbers.Replace("\n", ",");
         }
 
         private static int sumOf(String[] numbers)
