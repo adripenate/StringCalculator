@@ -55,6 +55,18 @@ namespace Tests
             }
         }
 
-
+        [TestMethod]
+        public void throw_exception_when_string_has_negative_4()
+        {
+            try
+            {
+                StringCalculator.Add("1,-4,5");
+                Assert.Fail();
+            }
+            catch (Exception e)
+            {
+                Assert.AreEqual(e.Message, "negatives not allowed: -4");
+            }
+        }
     }
 }
