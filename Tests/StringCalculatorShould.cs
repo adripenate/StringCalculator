@@ -80,14 +80,9 @@ namespace Tests
         }
 
         [TestMethod]
-        public void return_2_when_string_2_1001()
+        public void return_sum_ignoring_numbers_bigger_than_1000()
         {
             Assert.AreEqual(2, StringCalculator.Add("2,1001"));
-        }
-
-        [TestMethod]
-        public void return_2_when_string_2_1050()
-        {
             Assert.AreEqual(2, StringCalculator.Add("2,1050"));
         }
     }
