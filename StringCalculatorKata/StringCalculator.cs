@@ -6,7 +6,7 @@ namespace Kata
     {
         public static int add(string v)
         {
-            return -1;
+            return 0;
         }
     }
 }
