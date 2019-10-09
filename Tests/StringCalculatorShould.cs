@@ -78,5 +78,11 @@ namespace Tests
                 Assert.AreEqual(e.Message, "negatives not allowed: -4 -1");
             }
         }
+
+        [TestMethod]
+        public void return_2_when_string_2_1001()
+        {
+            Assert.AreEqual(2, StringCalculator.Add("2,1001"));
+        }
     }
 }
