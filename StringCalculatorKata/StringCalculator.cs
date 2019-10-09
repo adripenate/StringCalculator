@@ -9,7 +9,7 @@ namespace Kata
         public static int Add(String numbers)
         {
             if (numbers.Length == 0) return 0;
-            char delimiter;
+            char delimiter = extractDelimiter(numbers);
             if (numbers.Contains("//"))
             {
                 delimiter = numbers[2];
@@ -20,6 +20,11 @@ namespace Kata
                 delimiter = DEFAULT_DELIMITER;
             }
             return sumOf(extractNumbers(correctFormat(numbers, delimiter), delimiter));
+        }
+
+        private static char extractDelimiter(string numbers)
+        {
+            return numbers.Contains("//") ? numbers[2] : DEFAULT_DELIMITER;
         }
 
         private static string[] extractNumbers(string numbers, char delimiter)
