@@ -20,14 +20,9 @@ namespace Tests
         }
 
         [TestMethod]
-        public void return_3_when_string_numbers_1_2()
+        public void return_sum_when_string_has_unknown_amount_numbers()
         {
             Assert.AreEqual(3, StringCalculator.Add("1,2"));
-        }
-
-        [TestMethod]
-        public void return_4_when_string_numbers_1_2_1()
-        {
             Assert.AreEqual(4, StringCalculator.Add("1,2,1"));
         }
 
