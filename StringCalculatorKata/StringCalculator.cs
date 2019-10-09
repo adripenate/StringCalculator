@@ -42,11 +42,13 @@ namespace Kata
         private static int sumOf(String[] numbers)
         {
             int result = 0;
+            String negativeNumbers = "";
             for (int i = 0; i < numbers.Length; i++)
             {
-                if (valueOf(numbers[i]) < 0) throw new Exception("negatives not allowed: " + valueOf(numbers[i])); 
+                if (valueOf(numbers[i]) < 0) negativeNumbers += valueOf(numbers[i]) + " ";
                 result += valueOf(numbers[i]);
             }
+            if(negativeNumbers.Length > 0) throw new Exception("negatives not allowed: " + negativeNumbers.Trim());
             return result;
         }
 
