@@ -4,6 +4,8 @@ namespace Kata
 {
     public class StringCalculator
     {
+        private const char DEFAULT_DELIMITER = ',';
+
         public static int Add(String numbers)
         {
             if (numbers.Length == 0) return 0;
@@ -15,7 +17,7 @@ namespace Kata
             }
             else
             {
-                delimiter = ',';
+                delimiter = DEFAULT_DELIMITER;
             }
             return sumOf(extractNumbers(correctFormat(numbers, delimiter), delimiter));
         }
