@@ -44,7 +44,7 @@ namespace Kata
             int result = 0;
             String negativeNumbers = "";
             foreach(String number in numbers){
-                if (valueOf(number) < 0) negativeNumbers += valueOf(number) + " ";
+                if (valueOf(number) < 0) negativeNumbers += number + " ";
                 if(valueOf(number) <= 1000) result += valueOf(number);
             }
             if(negativeNumbers.Length > 0) throw new Exception("negatives not allowed: " + negativeNumbers.Trim());
