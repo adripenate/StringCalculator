@@ -7,9 +7,13 @@ namespace Kata
         public static int Add(String numbers)
         {
             if (numbers.Length == 0) return 0;
-            String[] numbersChain = numbers.Split(new String[] { "," }, StringSplitOptions.None);
+            return sumOf(numbers.Split(new String[] { "," }, StringSplitOptions.None));
+        }
+
+        private static int sumOf(String[] numbers)
+        {
             int result = 0;
-            for (int i = 0; i < numbersChain.Length; i++) result += valueOf(numbersChain[i]);
+            for (int i = 0; i < numbers.Length; i++) result += valueOf(numbers[i]);
             return result;
         }
 
