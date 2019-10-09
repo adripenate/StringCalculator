@@ -6,11 +6,11 @@ namespace Kata
     {
         public static int Add(String numbers)
         {
-            if (numbers.Length == 3)
+            if (numbers.Length > 1)
             {
                 String[] numbersChain = numbers.Split(new String[] {","}, StringSplitOptions.None);
                 int result = 0;
-                for(int i = 0; i < 2; i++) result += valueOf(numbersChain[i]);
+                for(int i = 0; i < numbersChain.Length; i++) result += valueOf(numbersChain[i]);
                 return result;
             }
             return numbers.Length == 1 ? valueOf(numbers) : 0;
