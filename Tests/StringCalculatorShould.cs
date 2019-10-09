@@ -32,5 +32,10 @@ namespace Tests
             Assert.AreEqual(6, StringCalculator.Add("1\n2,3"));
         }
 
+        [TestMethod]
+        public void return_6_when_string_has_special_delimiter_and_1_2()
+        {
+            Assert.AreEqual(6, StringCalculator.Add("//;\n1;2"));
+        }
     }
 }
