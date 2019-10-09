@@ -17,5 +17,11 @@ namespace Tests
         {
             Assert.AreEqual(1, StringCalculator.Add("1"));
         }
+
+        [TestMethod]
+        public void return_2_when_string_2()
+        {
+            Assert.AreEqual(2, StringCalculator.Add("2"));
+        }
     }
 }
