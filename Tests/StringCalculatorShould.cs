@@ -1,5 +1,6 @@
 using Kata;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace Tests
 {
@@ -39,5 +40,21 @@ namespace Tests
         {
             Assert.AreEqual(3, StringCalculator.Add("//;\n1;2"));
         }
+        
+        [TestMethod]
+        public void throw_exception_when_string_has_negative_1()
+        {
+            try
+            {
+                StringCalculator.Add("1,4,-1");
+                Assert.Fail();
+            }
+            catch (Exception e)
+            {
+                Assert.AreEqual(e.Message, "negatives not allowed: -1");
+            }
+        }
+
+
     }
 }

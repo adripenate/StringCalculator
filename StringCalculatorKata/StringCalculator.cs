@@ -29,14 +29,14 @@ namespace Kata
             return numbers.Contains("//");
         }
 
-        private static string[] extractNumbers(string numbers, char delimiter)
-        {
-            return numbers.Split(new char[] {delimiter}, StringSplitOptions.None);
-        }
-
         private static String correctFormat(string numbers, char delimiter)
         {
             return numbers.Replace('\n', delimiter);
+        }
+
+        private static string[] extractNumbers(string numbers, char delimiter)
+        {
+            return numbers.Split(new char[] {delimiter}, StringSplitOptions.None);
         }
 
         private static int sumOf(String[] numbers)
