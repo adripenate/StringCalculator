@@ -7,10 +7,15 @@ namespace Kata
         public static int Add(String numbers)
         {
             if (numbers.Length == 0) return 0;
-            return sumOf(correctFormart(numbers).Split(new String[] { "," }, StringSplitOptions.None));
+            return sumOf(extractNumbers(correctFormat(numbers)));
         }
 
-        private static String correctFormart(string numbers)
+        private static string[] extractNumbers(string numbers)
+        {
+            return numbers.Split(new String[] { "," }, StringSplitOptions.None);
+        }
+
+        private static String correctFormat(string numbers)
         {
             return numbers.Replace("\n", ",");
         }
