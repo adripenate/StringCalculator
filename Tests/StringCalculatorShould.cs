@@ -20,7 +20,7 @@ namespace Tests
         }
 
         [TestMethod]
-        public void return_sum_number_a_b_when_string_number_a_b()
+        public void return_3_when_string_numbers_1_2()
         {
             Assert.AreEqual(3, StringCalculator.Add("1,2"));
         }
