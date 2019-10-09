@@ -47,8 +47,13 @@ namespace Kata
                 if (isNegative(number)) negativeNumbers += number + " ";
                 if(isNotBigger(number)) result += valueOf(number);
             }
-            if(existsNegatives(negativeNumbers)) throw new Exception("negatives not allowed: " + negativeNumbers.Trim());
+            if(existsNegatives(negativeNumbers)) generateException(negativeNumbers);
             return result;
+        }
+
+        private static void generateException(string negativeNumbers)
+        {
+            throw new Exception("negatives not allowed: " + negativeNumbers.Trim());
         }
 
         private static bool existsNegatives(String negativesNumbers)
