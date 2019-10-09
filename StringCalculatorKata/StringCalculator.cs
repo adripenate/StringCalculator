@@ -7,7 +7,6 @@ namespace Kata
         public static int Add(String numbers)
         {
             if (numbers.Length == 0) return 0;
-            if (numbers.Length == 1) return valueOf(numbers);
             String[] numbersChain = numbers.Split(new String[] { "," }, StringSplitOptions.None);
             int result = 0;
             for (int i = 0; i < numbersChain.Length; i++) result += valueOf(numbersChain[i]);
