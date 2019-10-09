@@ -44,7 +44,7 @@ namespace Kata
             int result = 0;
             for (int i = 0; i < numbers.Length; i++)
             {
-                if (valueOf(numbers[i]) == -1) throw new Exception("negatives not allowed: -1"); 
+                if (valueOf(numbers[i]) < 0) throw new Exception("negatives not allowed: " + valueOf(numbers[i])); 
                 result += valueOf(numbers[i]);
             }
             return result;
