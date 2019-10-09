@@ -24,5 +24,12 @@ namespace Tests
         {
             Assert.AreEqual(3, StringCalculator.Add("1,2"));
         }
+
+        [TestMethod]
+        public void return_4_when_string_numbers_1_2_1()
+        {
+            Assert.AreEqual(4, StringCalculator.Add("1,2,1"));
+        }
+
     }
 }
