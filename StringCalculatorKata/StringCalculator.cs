@@ -10,21 +10,18 @@ namespace Kata
         {
             if (numbers.Length == 0) return 0;
             char delimiter = extractDelimiter(numbers);
-            if (numbers.Contains("//"))
-            {
-                delimiter = numbers[2];
-                numbers = numbers.Substring(4);
-            }
-            else
-            {
-                delimiter = DEFAULT_DELIMITER;
-            }
+            numbers = deleteDelimiterLine(numbers);
             return sumOf(extractNumbers(correctFormat(numbers, delimiter), delimiter));
         }
 
         private static char extractDelimiter(string numbers)
         {
             return numbers.Contains("//") ? numbers[2] : DEFAULT_DELIMITER;
+        }
+
+        private static string deleteDelimiterLine(string numbers)
+        {
+            return numbers.Contains("//") ? numbers.Substring(4) : numbers;
         }
 
         private static string[] extractNumbers(string numbers, char delimiter)
