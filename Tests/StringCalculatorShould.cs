@@ -6,6 +6,8 @@ namespace Tests
     [TestClass]
     public class StringCalculatorShould
     {
+
+
         [TestMethod]
         public void return_0_when_empty_string()
         {

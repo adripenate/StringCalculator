@@ -16,12 +16,17 @@ namespace Kata
 
         private static char extractDelimiter(string numbers)
         {
-            return numbers.Contains("//") ? numbers[2] : DEFAULT_DELIMITER;
+            return hasSpecialDelimiter(numbers) ? numbers[2] : DEFAULT_DELIMITER;
         }
 
         private static string deleteDelimiterLine(string numbers)
         {
-            return numbers.Contains("//") ? numbers.Substring(4) : numbers;
+            return hasSpecialDelimiter(numbers) ? numbers.Substring(4) : numbers;
+        }
+
+        private static bool hasSpecialDelimiter(string numbers)
+        {
+            return numbers.Contains("//");
         }
 
         private static string[] extractNumbers(string numbers, char delimiter)
