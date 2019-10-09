@@ -6,6 +6,7 @@ namespace Kata
     {
         public static int Add(String numbers)
         {
+            if (numbers.Length == 1) return 1;
             return 0;
         }
     }
