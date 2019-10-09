@@ -45,10 +45,15 @@ namespace Kata
             String negativeNumbers = "";
             foreach(String number in numbers){
                 if (isNegative(number)) negativeNumbers += number + " ";
-                if(valueOf(number) <= 1000) result += valueOf(number);
+                if(isNotBigger(number)) result += valueOf(number);
             }
             if(negativeNumbers.Length > 0) throw new Exception("negatives not allowed: " + negativeNumbers.Trim());
             return result;
+        }
+
+        private static bool isNotBigger(string number)
+        {
+            return valueOf(number) <= 1000;
         }
 
         private static bool isNegative(string number)
