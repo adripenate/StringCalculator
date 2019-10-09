@@ -29,7 +29,7 @@ namespace Tests
         [TestMethod]
         public void return_6_when_string_has_new_lines_and_1_2_3()
         {
-            Assert.AreEqual(3, StringCalculator.Add("1,\n2,3"));
+            Assert.AreEqual(6, StringCalculator.Add("1\n2,3"));
         }
 
     }
