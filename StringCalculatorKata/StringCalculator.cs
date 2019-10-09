@@ -4,7 +4,7 @@ namespace Kata
 {
     public class StringCalculator
     {
-        public static int add(string v)
+        public static int Add(String numbers)
         {
             return 0;
         }

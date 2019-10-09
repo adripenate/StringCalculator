@@ -9,7 +9,7 @@ namespace Tests
         [TestMethod]
         public void return_0_when_empty_string()
         {
-            Assert.AreEqual(0, StringCalculator.add(""));
+            Assert.AreEqual(0, StringCalculator.Add(""));
         }
     }
 }
