@@ -1,5 +1,6 @@
 using Model;
 using NUnit.Framework;
+using FluentAssertions;
 using System;
 
 namespace Tests
@@ -18,57 +19,81 @@ namespace Tests
         [Test]
         public void return_0_when_empty_string()
         {
-            Assert.That(stringCalculator.Add(""), Is.EqualTo(0));
+            var given = "";
+            var when = stringCalculator.Add("");
+            when.Should().Be(0);         
         }
 
         [Test]
         public void return_a_number_when_string_a_number()
         {
-            Assert.That(stringCalculator.Add("1"), Is.EqualTo(1));
-            Assert.That(stringCalculator.Add("2"), Is.EqualTo(2));
+            var given = "1";
+            var when = stringCalculator.Add(given);
+            when.Should().Be(1);
+
+            given = "2";
+            when = stringCalculator.Add(given);
+            when.Should().Be(2);
         }
 
         [Test]
         public void return_sum_when_string_has_unknown_amount_numbers()
         {
-            Assert.That(stringCalculator.Add("1,2"), Is.EqualTo(3));
-            Assert.That(stringCalculator.Add("1,2,1"), Is.EqualTo(4));
+            var given = "1,2";
+            var when = stringCalculator.Add("1,2");
+            when.Should().Be(3);
+
+            given = "1,2,1";
+            when = stringCalculator.Add(given);
+            when.Should().Be(4);
         }
 
         [Test]
         public void return_6_when_string_has_new_lines_and_1_2_3()
         {
-            Assert.That(stringCalculator.Add("1\n2,3"), Is.EqualTo(6));
+            var given = "1\n2,3";
+            var when = stringCalculator.Add(given);
+            when.Should().Be(6);
         }
 
         [Test]
         public void return_3_when_string_has_special_delimiter_and_1_2()
         {
-            Assert.That(stringCalculator.Add("//;\n1;2"), Is.EqualTo(3));
+            var given = "//;\n1;2";
+            var when = stringCalculator.Add(given);
+            when.Should().Be(3);
         }
 
         [Test]
         public void throw_exception_when_string_has_negative_number()
         {
-            Assert.Throws(Is.TypeOf<Exception>().And.Message.EqualTo("negatives not allowed: -1"),
-                () => stringCalculator.Add("1,4,-1"));
-            
-            Assert.Throws(Is.TypeOf<Exception>().And.Message.EqualTo("negatives not allowed: -4"),
-                () => stringCalculator.Add("1,-4,5"));
+            var given = "1,4,-1";
+            Action when = () => stringCalculator.Add(given);
+            when.Should().Throw<Exception>().WithMessage("negatives not allowed: -1");
+
+            given = "1,-4,5";
+            when = () => stringCalculator.Add(given);
+            when.Should().Throw<Exception>().WithMessage("negatives not allowed: -4");
         }
 
         [Test]
         public void throw_exception_when_string_has_multiples_negative_numbers()
         {
-            Assert.Throws(Is.TypeOf<Exception>().And.Message.EqualTo("negatives not allowed: -4 -1"), 
-                () => stringCalculator.Add("1,-4,3,-1"));
+            var given = "1,-4,3,-1";
+            Action when = () => stringCalculator.Add(given);
+            when.Should().Throw<Exception>().WithMessage("negatives not allowed: -4 -1");
         }
 
         [Test]
         public void return_sum_ignoring_numbers_bigger_than_1000()
         {
-            Assert.AreEqual(2, stringCalculator.Add("2,1001"));
-            Assert.AreEqual(2, stringCalculator.Add("2,1050"));
+            var given = "2,1001";
+            var when = stringCalculator.Add(given);
+            when.Should().Be(2);
+
+            given = "2,1050";
+            when = stringCalculator.Add(given);
+            when.Should().Be(2);
         }
     }
 }

@@ -104,6 +104,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[5.9.0, )"
+            },
             "MSTest.TestAdapter": {
               "target": "Package",
               "version": "[1.4.0, )"
