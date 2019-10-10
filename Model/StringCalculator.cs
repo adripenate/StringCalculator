@@ -8,10 +8,10 @@ namespace Model
 
         public int Add(String numbers)
         {
-            if (numbers.Length == 0) return 0;
+            if (isEmpty(numbers)) return 0;
             char delimiter = extractDelimiter(numbers);
-            numbers = deleteDelimiterLine(numbers);
-            return sumOf(separateNumbers(correctFormat(numbers, delimiter), delimiter));
+            numbers = getCorrectFormat(getWithoutDelimiterLine(numbers), delimiter);
+            return sumOf(separateNumbers(numbers, delimiter));
         }
 
         private static char extractDelimiter(string numbers)
@@ -19,7 +19,7 @@ namespace Model
             return hasSpecialDelimiter(numbers) ? numbers[2] : DEFAULT_DELIMITER;
         }
 
-        private static string deleteDelimiterLine(string numbers)
+        private static string getWithoutDelimiterLine(string numbers)
         {
             return hasSpecialDelimiter(numbers) ? numbers.Substring(4) : numbers;
         }
@@ -29,7 +29,7 @@ namespace Model
             return numbers.Contains("//");
         }
 
-        private static String correctFormat(string numbers, char delimiter)
+        private static String getCorrectFormat(string numbers, char delimiter)
         {
             return numbers.Replace('\n', delimiter);
         }
@@ -39,15 +39,20 @@ namespace Model
             return numbers.Split(new char[] {delimiter}, StringSplitOptions.None);
         }
 
+        private static bool isEmpty(string numbers)
+        {
+            return numbers.Length == 0;
+        }
+
         private static int sumOf(String[] numbers)
         {
             int result = 0;
             String negativeNumbers = "";
             foreach(String number in numbers){
                 if (isNegative(number)) negativeNumbers += number + " ";
-                if(isNotBigger(number)) result += valueOf(number);
+                if(isNotBiggerThan1000(number)) result += valueOf(number);
             }
-            if(existsNegatives(negativeNumbers)) generateException(negativeNumbers);
+            if(!isEmpty(negativeNumbers)) generateException(negativeNumbers);
             return result;
         }
 
@@ -56,12 +61,7 @@ namespace Model
             throw new Exception("negatives not allowed: " + negativeNumbers.Trim());
         }
 
-        private static bool existsNegatives(String negativesNumbers)
-        {
-            return negativesNumbers.Length > 0;
-        }
-
-        private static bool isNotBigger(string number)
+        private static bool isNotBiggerThan1000(string number)
         {
             return valueOf(number) <= 1000;
         }
