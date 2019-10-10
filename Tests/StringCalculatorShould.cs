@@ -1,56 +1,53 @@
-using Kata;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NSubstitute;
+using Model;
+using NUnit.Framework;
 using System;
 
 namespace Tests
 {
-    [TestClass]
+    [TestFixture]
     public class StringCalculatorShould
     {
         private StringCalculator stringCalculator;
 
-        [TestInitialize]
+        [SetUp]
         public void SetUp()
         {
-            var repo = Substitute.For<IPersistence>();
-            stringCalculator = new StringCalculator(repo);
+            stringCalculator = new StringCalculator();
         }
 
-        [TestMethod]
+        [Test]
         public void return_0_when_empty_string()
         {
             Assert.AreEqual(0, stringCalculator.Add(""));
-            //repo.Received().save("opereacion", 1);
         }
 
-        [TestMethod]
+        [Test]
         public void return_a_number_when_string_a_number()
         {
             Assert.AreEqual(1, stringCalculator.Add("1"));
             Assert.AreEqual(2, stringCalculator.Add("2"));
         }
 
-        [TestMethod]
+        [Test]
         public void return_sum_when_string_has_unknown_amount_numbers()
         {
             Assert.AreEqual(3, stringCalculator.Add("1,2"));
             Assert.AreEqual(4, stringCalculator.Add("1,2,1"));
         }
 
-        [TestMethod]
+        [Test]
         public void return_6_when_string_has_new_lines_and_1_2_3()
         {
             Assert.AreEqual(6, stringCalculator.Add("1\n2,3"));
         }
 
-        [TestMethod]
+        [Test]
         public void return_3_when_string_has_special_delimiter_and_1_2()
         {
             Assert.AreEqual(3, stringCalculator.Add("//;\n1;2"));
         }
-        
-        [TestMethod]
+
+        [Test]
         public void throw_exception_when_string_has_negative_number()
         {
             try
@@ -73,8 +70,8 @@ namespace Tests
                 Assert.AreEqual(e.Message, "negatives not allowed: -4");
             }
         }
-        
-        [TestMethod]
+
+        [Test]
         public void throw_exception_when_string_has_multiples_negative_numbers()
         {
             try
@@ -88,7 +85,7 @@ namespace Tests
             }
         }
 
-        [TestMethod]
+        [Test]
         public void return_sum_ignoring_numbers_bigger_than_1000()
         {
             Assert.AreEqual(2, stringCalculator.Add("2,1001"));

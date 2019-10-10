@@ -1,23 +1,16 @@
 ﻿using System;
 
-namespace Kata
+namespace Model
 {
     public class StringCalculator
     {
         private const char DEFAULT_DELIMITER = ',';
-        private IPersistence persistence;
-
-        public StringCalculator(IPersistence persistence)
-        {
-            this.persistence = persistence;
-        }
 
         public int Add(String numbers)
         {
             if (numbers.Length == 0) return 0;
             char delimiter = extractDelimiter(numbers);
             numbers = deleteDelimiterLine(numbers);
-            
             return sumOf(separateNumbers(correctFormat(numbers, delimiter), delimiter));
         }
 

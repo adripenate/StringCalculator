@@ -1,0 +1,11 @@
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\bin\Debug\netcoreapp3.0\Persistence.exe
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\bin\Debug\netcoreapp3.0\Persistence.deps.json
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\bin\Debug\netcoreapp3.0\Persistence.runtimeconfig.json
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\bin\Debug\netcoreapp3.0\Persistence.runtimeconfig.dev.json
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\bin\Debug\netcoreapp3.0\Persistence.dll
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\bin\Debug\netcoreapp3.0\Persistence.pdb
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\obj\Debug\netcoreapp3.0\Persistence.csprojAssemblyReference.cache
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\obj\Debug\netcoreapp3.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\obj\Debug\netcoreapp3.0\Persistence.AssemblyInfo.cs
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\obj\Debug\netcoreapp3.0\Persistence.dll
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\obj\Debug\netcoreapp3.0\Persistence.pdb
