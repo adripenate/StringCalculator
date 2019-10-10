@@ -50,39 +50,18 @@ namespace Tests
         [Test]
         public void throw_exception_when_string_has_negative_number()
         {
-            try
-            {
-                stringCalculator.Add("1,4,-1");
-                Assert.Fail();
-            }
-            catch (Exception e)
-            {
-                Assert.AreEqual(e.Message, "negatives not allowed: -1");
-            }
-
-            try
-            {
-                stringCalculator.Add("1,-4,5");
-                Assert.Fail();
-            }
-            catch (Exception e)
-            {
-                Assert.AreEqual(e.Message, "negatives not allowed: -4");
-            }
+            Assert.Throws(Is.TypeOf<Exception>().And.Message.EqualTo("negatives not allowed: -1"),
+                () => stringCalculator.Add("1,4,-1"));
+            
+            Assert.Throws(Is.TypeOf<Exception>().And.Message.EqualTo("negatives not allowed: -4"),
+                () => stringCalculator.Add("1,-4,5"));
         }
 
         [Test]
         public void throw_exception_when_string_has_multiples_negative_numbers()
         {
-            try
-            {
-                stringCalculator.Add("1,-4,3,-1");
-                Assert.Fail();
-            }
-            catch (Exception e)
-            {
-                Assert.AreEqual(e.Message, "negatives not allowed: -4 -1");
-            }
+            Assert.Throws(Is.TypeOf<Exception>().And.Message.EqualTo("negatives not allowed: -4 -1"), 
+                () => stringCalculator.Add("1,-4,3,-1"));
         }
 
         [Test]
