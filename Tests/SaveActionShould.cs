@@ -4,6 +4,7 @@ using Kata;
 using NUnit.Framework;
 using FluentAssertions;
 using System.IO;
+using System;
 
 namespace Tests
 {
@@ -32,6 +33,20 @@ namespace Tests
             {
                 var when = streamReader.ReadToEnd().Trim();
                 when.Should().Be(given + " -> El resultado es 3");
+            }
+        }
+
+        [Test]
+        public void write_operation_with_exception_message_in_file()
+        {
+            var given = "1,4,-1";
+
+            saveAction.execute(given, filePath);
+
+            using (StreamReader streamReader = new StreamReader(filePath))
+            {
+                var when = streamReader.ReadToEnd().Trim();
+                when.Should().Be(given + " -> negatives not allowed: -1");
             }
         }
     }
