@@ -17,7 +17,8 @@ namespace Kata
 
         public void execute(string given, string path)
         {
-            
+            var log = given + " -> El resultado es " + stringCalculator.Add(given);
+            persistenceFile.Save(log, path);
         }
     }
 }
