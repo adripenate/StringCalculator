@@ -18,7 +18,6 @@ namespace Tests
         {
             saveAction = new SaveAction(new StringCalculator(), new PersistenceFile());
             filePath = @"C:\Users\apenate\Desktop\StringCalculatorKata\LogTest.txt";
-            if (File.Exists(filePath)) File.Delete(filePath);
         }
 
         [Test]
@@ -47,6 +46,12 @@ namespace Tests
                 var when = streamReader.ReadToEnd().Trim();
                 when.Should().Be(given + " -> negatives not allowed: -1");
             }
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            if (File.Exists(filePath)) File.Delete(filePath);
         }
     }
 }
