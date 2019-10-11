@@ -1577,6 +1577,16 @@
         "runtime": {
           "bin/placeholder/Model.dll": {}
         }
+      },
+      "Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Persistence.dll": {}
+        }
       }
     }
   },
@@ -5713,6 +5723,11 @@
       "type": "project",
       "path": "../Model/Model.csproj",
       "msbuildProject": "../Model/Model.csproj"
+    },
+    "Persistence/1.0.0": {
+      "type": "project",
+      "path": "../Persistence/Persistence.csproj",
+      "msbuildProject": "../Persistence/Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5724,7 +5739,8 @@
       "Model >= 1.0.0",
       "NSubstitute >= 4.2.1",
       "NUnit >= 3.12.0",
-      "NUnit3TestAdapter >= 3.15.1"
+      "NUnit3TestAdapter >= 3.15.1",
+      "Persistence >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5761,6 +5777,9 @@
           "projectReferences": {
             "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Model\\Model.csproj": {
               "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Model\\Model.csproj"
+            },
+            "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Persistence\\Persistence.csproj"
             }
           }
         }

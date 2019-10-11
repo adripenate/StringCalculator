@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Persistence
 {
-    interface IPersistence 
+    public interface IPersistence 
     {
+        void Save(string line, string path);
+
     }
 }

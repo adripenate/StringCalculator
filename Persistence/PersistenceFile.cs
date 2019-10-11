@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Persistence
 {
-    class PersistenceFile
+    public class PersistenceFile : IPersistence
     {
+        public void Save(string line, string path)
+        {
+            
+        }
     }
 }
