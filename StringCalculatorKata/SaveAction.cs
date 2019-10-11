@@ -17,8 +17,13 @@ namespace Kata
 
         public void execute(string numbers, string filePath)
         {
-            var log = numbers + " -> El resultado es " + stringCalculator.Add(numbers);
+            var log = getOperationRegister(numbers);
             persistenceFile.Save(log, filePath);
+        }
+
+        private string getOperationRegister(string numbers)
+        {
+            return numbers + " -> El resultado es " + stringCalculator.Add(numbers);
         }
     }
 }
