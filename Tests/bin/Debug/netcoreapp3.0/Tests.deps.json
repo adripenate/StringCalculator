@@ -9,6 +9,7 @@
       "Tests/1.0.0": {
         "dependencies": {
           "FluentAssertions": "5.9.0",
+          "Kata": "1.0.0",
           "MSTest.TestAdapter": "1.4.0",
           "MSTest.TestFramework": "1.4.0",
           "Microsoft.NET.Test.Sdk": "16.0.1",
@@ -1135,6 +1136,15 @@
           }
         }
       },
+      "Kata/1.0.0": {
+        "dependencies": {
+          "Model": "1.0.0",
+          "Persistence": "1.0.0"
+        },
+        "runtime": {
+          "Kata.dll": {}
+        }
+      },
       "Model/1.0.0": {
         "runtime": {
           "Model.dll": {}
@@ -1719,6 +1729,11 @@
       "sha512": "sha512-A/uxsWi/Ifzkmd4ArTLISMbfFs6XpRPsXZonrIqyTY70xi8t+mDtvSM5Os0RqyRDobjMBwIDHDL4NOIbkDwf7A==",
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "Kata/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Model/1.0.0": {
       "type": "project",

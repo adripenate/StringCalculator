@@ -110,3 +110,6 @@ C:\Users\apenate\Desktop\StringCalculatorKata\Tests\bin\Debug\netcoreapp3.0\runt
 C:\Users\apenate\Desktop\StringCalculatorKata\Tests\bin\Debug\netcoreapp3.0\Persistence.exe
 C:\Users\apenate\Desktop\StringCalculatorKata\Tests\bin\Debug\netcoreapp3.0\Persistence.dll
 C:\Users\apenate\Desktop\StringCalculatorKata\Tests\bin\Debug\netcoreapp3.0\Persistence.pdb
+C:\Users\apenate\Desktop\StringCalculatorKata\Tests\bin\Debug\netcoreapp3.0\Kata.exe
+C:\Users\apenate\Desktop\StringCalculatorKata\Tests\bin\Debug\netcoreapp3.0\Kata.dll
+C:\Users\apenate\Desktop\StringCalculatorKata\Tests\bin\Debug\netcoreapp3.0\Kata.pdb

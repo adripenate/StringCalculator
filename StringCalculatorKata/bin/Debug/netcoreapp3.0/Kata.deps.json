@@ -7,14 +7,38 @@
   "targets": {
     ".NETCoreApp,Version=v3.0": {
       "Kata/1.0.0": {
+        "dependencies": {
+          "Model": "1.0.0",
+          "Persistence": "1.0.0"
+        },
         "runtime": {
           "Kata.dll": {}
+        }
+      },
+      "Model/1.0.0": {
+        "runtime": {
+          "Model.dll": {}
+        }
+      },
+      "Persistence/1.0.0": {
+        "runtime": {
+          "Persistence.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Kata/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Persistence/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
