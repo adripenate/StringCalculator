@@ -24,7 +24,15 @@ namespace Tests
         [Test]
         public void write_operation_with_result_in_file()
         {
-            
+            var given = "1,2";
+
+            saveAction.execute(given, path);
+
+            using (StreamReader streamReader = new StreamReader(path))
+            {
+                var when = streamReader.ReadToEnd().Trim();
+                when.Should().Be(given + " -> El resultado es 3");
+            }
         }
     }
 }

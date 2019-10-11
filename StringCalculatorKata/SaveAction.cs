@@ -1,5 +1,6 @@
 ﻿using Persistence;
 using Model;
+using System;
 
 namespace Kata
 {
@@ -12,6 +13,11 @@ namespace Kata
         {
             this.stringCalculator = stringCalculator;
             this.persistenceFile = persistenceFile;
+        }
+
+        public void execute(string given, string path)
+        {
+            
         }
     }
 }
