@@ -28,9 +28,9 @@ namespace Tests
             persistenceFile.Save("Test line", path);
             using (StreamReader streamReader = new StreamReader(path))
             {
-                String when = streamReader.ReadLine();
+                string when = streamReader.ReadLine();
 
-                when.Should().NotBeNull().And.Should().Be("Test line");
+                when.Should().Be("Test line");
             }
         }
     }

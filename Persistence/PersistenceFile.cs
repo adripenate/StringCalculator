@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace Persistence
@@ -8,7 +9,10 @@ namespace Persistence
     {
         public void Save(string line, string path)
         {
-            
+            using (StreamWriter streamWriter = new StreamWriter(path))
+            {
+                streamWriter.WriteLine(line);
+            }
         }
     }
 }
