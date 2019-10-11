@@ -23,7 +23,15 @@ namespace Kata
 
         private string getOperationRegister(string numbers)
         {
-            return numbers + " -> El resultado es " + stringCalculator.Add(numbers);
+            try
+            {
+                return numbers + " -> El resultado es " + stringCalculator.Add(numbers);
+            }
+            catch(Exception e)
+            {
+                return numbers + " -> " + e.Message;
+            }
+            
         }
     }
 }
