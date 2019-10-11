@@ -1,7 +1,4 @@
-C:\Users\apenate\Desktop\StringCalculatorKata\Model\bin\Debug\netcoreapp3.0\Model.exe
 C:\Users\apenate\Desktop\StringCalculatorKata\Model\bin\Debug\netcoreapp3.0\Model.deps.json
-C:\Users\apenate\Desktop\StringCalculatorKata\Model\bin\Debug\netcoreapp3.0\Model.runtimeconfig.json
-C:\Users\apenate\Desktop\StringCalculatorKata\Model\bin\Debug\netcoreapp3.0\Model.runtimeconfig.dev.json
 C:\Users\apenate\Desktop\StringCalculatorKata\Model\bin\Debug\netcoreapp3.0\Model.dll
 C:\Users\apenate\Desktop\StringCalculatorKata\Model\bin\Debug\netcoreapp3.0\Model.pdb
 C:\Users\apenate\Desktop\StringCalculatorKata\Model\obj\Debug\netcoreapp3.0\Model.csprojAssemblyReference.cache

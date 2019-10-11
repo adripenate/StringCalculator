@@ -4,7 +4,6 @@ using Kata;
 using NUnit.Framework;
 using FluentAssertions;
 using System.IO;
-using System;
 
 namespace Tests
 {

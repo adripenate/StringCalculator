@@ -1,7 +1,4 @@
-C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\bin\Debug\netcoreapp3.0\Kata.exe
 C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\bin\Debug\netcoreapp3.0\Kata.deps.json
-C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\bin\Debug\netcoreapp3.0\Kata.runtimeconfig.json
-C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\bin\Debug\netcoreapp3.0\Kata.runtimeconfig.dev.json
 C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\bin\Debug\netcoreapp3.0\Kata.dll
 C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\bin\Debug\netcoreapp3.0\Kata.pdb
 C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\obj\Debug\netcoreapp3.0\Kata.csprojAssemblyReference.cache
@@ -9,8 +6,6 @@ C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\obj\Debug\net
 C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\obj\Debug\netcoreapp3.0\Kata.AssemblyInfo.cs
 C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\obj\Debug\netcoreapp3.0\Kata.dll
 C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\obj\Debug\netcoreapp3.0\Kata.pdb
-C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\bin\Debug\netcoreapp3.0\Model.exe
-C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\bin\Debug\netcoreapp3.0\Persistence.exe
 C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\bin\Debug\netcoreapp3.0\Model.dll
 C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\bin\Debug\netcoreapp3.0\Persistence.dll
 C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\bin\Debug\netcoreapp3.0\Model.pdb
