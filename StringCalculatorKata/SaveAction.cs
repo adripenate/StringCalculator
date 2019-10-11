@@ -15,10 +15,10 @@ namespace Kata
             this.persistenceFile = persistenceFile;
         }
 
-        public void execute(string given, string path)
+        public void execute(string numbers, string filePath)
         {
-            var log = given + " -> El resultado es " + stringCalculator.Add(given);
-            persistenceFile.Save(log, path);
+            var log = numbers + " -> El resultado es " + stringCalculator.Add(numbers);
+            persistenceFile.Save(log, filePath);
         }
     }
 }

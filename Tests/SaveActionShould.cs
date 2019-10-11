@@ -11,14 +11,14 @@ namespace Tests
     class SaveActionShould
     {
         private SaveAction saveAction;
-        private string path;
+        private string filePath;
 
         [SetUp]
         public void SetUp()
         {
             saveAction = new SaveAction(new StringCalculator(), new PersistenceFile());
-            path = @"C:\Users\apenate\Desktop\StringCalculatorKata\LogTest.txt";
-            if (File.Exists(path)) File.Delete(path);
+            filePath = @"C:\Users\apenate\Desktop\StringCalculatorKata\LogTest.txt";
+            if (File.Exists(filePath)) File.Delete(filePath);
         }
 
         [Test]
@@ -26,9 +26,9 @@ namespace Tests
         {
             var given = "1,2";
 
-            saveAction.execute(given, path);
+            saveAction.execute(given, filePath);
 
-            using (StreamReader streamReader = new StreamReader(path))
+            using (StreamReader streamReader = new StreamReader(filePath))
             {
                 var when = streamReader.ReadToEnd().Trim();
                 when.Should().Be(given + " -> El resultado es 3");
