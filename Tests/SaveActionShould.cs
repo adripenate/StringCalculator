@@ -23,28 +23,28 @@ namespace Tests
         [Test]
         public void write_operation_with_result_in_file()
         {
-            var given = "1,2";
+            var operation = "1,2";
 
-            saveAction.execute(given);
+            saveAction.execute(operation);
 
             using (StreamReader streamReader = new StreamReader(filePath))
             {
-                var when = streamReader.ReadToEnd().Trim();
-                when.Should().Be(given + " -> El resultado es 3");
+                var lineInFile = streamReader.ReadToEnd().Trim();
+                lineInFile.Should().Be(operation + " -> El resultado es 3");
             }
         }
 
         [Test]
         public void write_operation_with_exception_message_in_file()
         {
-            var given = "1,4,-1";
+            var operation = "1,4,-1";
 
-            saveAction.execute(given);
+            saveAction.execute(operation);
 
             using (StreamReader streamReader = new StreamReader(filePath))
             {
-                var when = streamReader.ReadToEnd().Trim();
-                when.Should().Be(given + " -> negatives not allowed: -1");
+                var lineInFile = streamReader.ReadToEnd().Trim();
+                lineInFile.Should().Be(operation + " -> negatives not allowed: -1");
             }
         }
 
