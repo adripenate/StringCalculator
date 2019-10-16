@@ -9,7 +9,7 @@ namespace Tests
     [TestFixture]
     class PersistenceFileShould
     {
-        String path;
+        string path;
         PersistenceFile persistenceFile;
 
         [SetUp]
@@ -22,14 +22,13 @@ namespace Tests
         [Test]
         public void write_line_in_file()
         {
-            var given = path;
-
-            persistenceFile.Save("Test line", 3);
+            persistenceFile.Save("Operation", 3);
+            
             using (StreamReader streamReader = new StreamReader(path))
             {
-                string when = streamReader.ReadLine();
+                string lineInFile = streamReader.ReadLine();
 
-                when.Should().Be("Test line -> El resultado es " + 3);
+                lineInFile.Should().Be("Operation -> El resultado es " + 3);
             }
         }
 
