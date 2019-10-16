@@ -22,9 +22,9 @@ namespace Kata
                 var result = stringCalculator.Add(numbers);
                 persistenceFile.Save(numbers, result);
             } 
-            catch (Exception e)
+            catch (Exception exception)
             {
-                persistenceFile.Save(numbers, e);
+                persistenceFile.Save(numbers, exception);
             }
         }
     }
