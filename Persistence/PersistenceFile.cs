@@ -14,17 +14,19 @@ namespace Persistence
 
         public void Save(string operation, int result)
         {
-            using (StreamWriter streamWriter = new StreamWriter(path))
-            {
-                streamWriter.WriteLine(operation + " -> El resultado es " + result);
-            }
+            Write(operation + " -> El resultado es " + result);
         }
 
         public void Save(string operation, Exception error)
         {
+            Write(operation + " -> " + error.Message);
+        }
+
+        private void Write(string line)
+        {
             using (StreamWriter streamWriter = new StreamWriter(path))
             {
-                streamWriter.WriteLine(operation + " -> " + error.Message);
+                streamWriter.WriteLine(line);
             }
         }
     }
