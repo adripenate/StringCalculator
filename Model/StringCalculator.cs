@@ -16,8 +16,7 @@ namespace Model
         {
             if (isEmpty(chainNumbers)) return 0;
             char delimiter = extractDelimiter(chainNumbers);
-            string[] numbers = separateNumbers(chainNumbers, delimiter);
-            return sumOf(numbers);
+            return sumOf(separateNumbers(chainNumbers, delimiter));
         }
 
         private static char extractDelimiter(string numbers)
