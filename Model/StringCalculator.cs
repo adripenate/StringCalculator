@@ -16,7 +16,7 @@ namespace Model
         {
             if (isEmpty(chainNumbers)) return 0;
             char delimiter = extractDelimiter(chainNumbers);
-            string[] numbers = separateNumbers(getCorrectFormat(getWithoutDelimiterLine(chainNumbers), delimiter), delimiter);
+            string[] numbers = separateNumbers(chainNumbers, delimiter);
             return sumOf(numbers);
         }
 
@@ -35,13 +35,14 @@ namespace Model
             return numbers.Contains(START_OF_DELIMITER_LINE);
         }
 
-        private static String getCorrectFormat(string numbers, char delimiter)
+        private static string getCorrectFormat(string numbers, char delimiter)
         {
             return numbers.Replace(NEW_LINE, delimiter);
         }
 
         private static string[] separateNumbers(string numbers, char delimiter)
         {
+            numbers = getCorrectFormat(getWithoutDelimiterLine(numbers), delimiter);
             return numbers.Split(new char[] {delimiter}, StringSplitOptions.None);
         }
 
