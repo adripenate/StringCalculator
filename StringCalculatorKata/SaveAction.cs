@@ -17,21 +17,15 @@ namespace Kata
 
         public void execute(string numbers, string filePath)
         {
-            var log = getOperationRegister(numbers);
-            persistenceFile.Save(log, filePath);
-        }
-
-        private string getOperationRegister(string numbers)
-        {
             try
             {
-                return numbers + " -> El resultado es " + stringCalculator.Add(numbers);
-            }
-            catch(Exception e)
+                var result = stringCalculator.Add(numbers);
+                persistenceFile.Save(numbers, result, filePath);
+            } 
+            catch (Exception e)
             {
-                return numbers + " -> " + e.Message;
+                persistenceFile.Save(numbers, e, filePath);
             }
-            
         }
     }
 }

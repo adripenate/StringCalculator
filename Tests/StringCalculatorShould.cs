@@ -26,21 +26,14 @@ namespace Tests
             when.Should().Be(0);         
         }
 
-        [Test]
-        public void return_a_number_when_string_a_number()
+        [TestCase("1", 1), TestCase("2", 2)]
+        public void return_a_number_when_string_a_number(string number, int sumResult)
         {
-            var given = "1";
+            var given = number;
             
             var when = stringCalculator.Add(given);
             
-            when.Should().Be(1);
-
-
-            given = "2";
-            
-            when = stringCalculator.Add(given);
-            
-            when.Should().Be(2);
+            when.Should().Be(sumResult);
         }
 
         [Test]

@@ -24,12 +24,12 @@ namespace Tests
         {
             var given = path;
 
-            persistenceFile.Save("Test line", path);
+            persistenceFile.Save("Test line", 3, path);
             using (StreamReader streamReader = new StreamReader(path))
             {
                 string when = streamReader.ReadLine();
 
-                when.Should().Be("Test line");
+                when.Should().Be("Test line -> El resultado es " + 3);
             }
         }
 
