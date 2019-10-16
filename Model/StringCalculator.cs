@@ -12,12 +12,12 @@ namespace Model
         private const int DELIMITER_POSITION = 2;
         private const int START_OF_NUMBERS_LINE = 4;
 
-        public int Add(String numbers)
+        public int Add(string chainNumbers)
         {
-            if (isEmpty(numbers)) return 0;
-            char delimiter = extractDelimiter(numbers);
-            numbers = getCorrectFormat(getWithoutDelimiterLine(numbers), delimiter);
-            return sumOf(separateNumbers(numbers, delimiter));
+            if (isEmpty(chainNumbers)) return 0;
+            char delimiter = extractDelimiter(chainNumbers);
+            string[] numbers = separateNumbers(getCorrectFormat(getWithoutDelimiterLine(chainNumbers), delimiter), delimiter);
+            return sumOf(numbers);
         }
 
         private static char extractDelimiter(string numbers)
