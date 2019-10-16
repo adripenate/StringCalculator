@@ -19,11 +19,11 @@ namespace Tests
         [Test]
         public void return_0_when_empty_string()
         {
-            var given = "";
+            var emptyString = "";
             
-            var when = stringCalculator.Add(given);
+            var resultOfOperation = stringCalculator.Add(emptyString);
             
-            when.Should().Be(0);         
+            resultOfOperation.Should().Be(0);         
         }
 
         [TestCase("1", 1), TestCase("2", 2)]
@@ -31,89 +31,89 @@ namespace Tests
         {
             var given = number;
             
-            var when = stringCalculator.Add(given);
+            var resultOfOperation = stringCalculator.Add(given);
             
-            when.Should().Be(sumResult);
+            resultOfOperation.Should().Be(sumResult);
         }
 
         [Test]
         public void return_sum_when_string_has_unknown_amount_numbers()
         {
-            var given = "1,2";
+            var unknowAmountOfNumbers = "1,2";
             
-            var when = stringCalculator.Add(given);
+            var resultOfOperation = stringCalculator.Add(unknowAmountOfNumbers);
             
-            when.Should().Be(3);
+            resultOfOperation.Should().Be(3);
 
 
-            given = "1,2,1";
+            unknowAmountOfNumbers = "1,2,1";
             
-            when = stringCalculator.Add(given);
+            resultOfOperation = stringCalculator.Add(unknowAmountOfNumbers);
             
-            when.Should().Be(4);
+            resultOfOperation.Should().Be(4);
         }
 
         [Test]
         public void return_6_when_string_has_new_lines_and_1_2_3()
         {
-            var given = "1\n2,3";
+            var numbersWithNewLine = "1\n2,3";
             
-            var when = stringCalculator.Add(given);
+            var resultOfOperation = stringCalculator.Add(numbersWithNewLine);
             
-            when.Should().Be(6);
+            resultOfOperation.Should().Be(6);
         }
 
         [Test]
         public void return_3_when_string_has_special_delimiter_and_1_2()
         {
-            var given = "//;\n1;2";
+            var numbersWithSpecialDelimiter = "//;\n1;2";
             
-            var when = stringCalculator.Add(given);
+            var resultOfOperation = stringCalculator.Add(numbersWithSpecialDelimiter);
             
-            when.Should().Be(3);
+            resultOfOperation.Should().Be(3);
         }
 
         [Test]
         public void throw_exception_when_string_has_negative_number()
         {
-            var given = "1,4,-1";
+            var negativeNumber = "1,4,-1";
             
-            Action when = () => stringCalculator.Add(given);
+            Action resultOfOperation = () => stringCalculator.Add(negativeNumber);
             
-            when.Should().Throw<Exception>().WithMessage("negatives not allowed: -1");
+            resultOfOperation.Should().Throw<Exception>().WithMessage("negatives not allowed: -1");
 
-            given = "1,-4,5";
+            negativeNumber = "1,-4,5";
             
-            when = () => stringCalculator.Add(given);
+            resultOfOperation = () => stringCalculator.Add(negativeNumber);
             
-            when.Should().Throw<Exception>().WithMessage("negatives not allowed: -4");
+            resultOfOperation.Should().Throw<Exception>().WithMessage("negatives not allowed: -4");
         }
 
         [Test]
         public void throw_exception_when_string_has_multiples_negative_numbers()
         {
-            var given = "1,-4,3,-1";
+            var multipleNegativeNumbers = "1,-4,3,-1";
             
-            Action when = () => stringCalculator.Add(given);
+            Action resultOfOperation = () => stringCalculator.Add(multipleNegativeNumbers);
             
-            when.Should().Throw<Exception>().WithMessage("negatives not allowed: -4 -1");
+            resultOfOperation.Should().Throw<Exception>().WithMessage("negatives not allowed: -4 -1");
         }
 
         [Test]
         public void return_sum_ignoring_numbers_bigger_than_1000()
         {
-            var given = "2,1001";
+            var numberBiggerThan1000 = "2,1001";
             
-            var when = stringCalculator.Add(given);
+            var resultOfOperation = stringCalculator.Add(numberBiggerThan1000);
             
-            when.Should().Be(2);
+            resultOfOperation.Should().Be(2);
 
 
-            given = "2,1050";
+            numberBiggerThan1000 = "2,1050";
             
-            when = stringCalculator.Add(given);
+            resultOfOperation = stringCalculator.Add(numberBiggerThan1000);
             
-            when.Should().Be(2);
+            resultOfOperation.Should().Be(2);
         }
     }
 }
