@@ -15,16 +15,16 @@ namespace Kata
             this.persistenceFile = persistenceFile;
         }
 
-        public void execute(string numbers, string filePath)
+        public void execute(string numbers)
         {
             try
             {
                 var result = stringCalculator.Add(numbers);
-                persistenceFile.Save(numbers, result, filePath);
+                persistenceFile.Save(numbers, result);
             } 
             catch (Exception e)
             {
-                persistenceFile.Save(numbers, e, filePath);
+                persistenceFile.Save(numbers, e);
             }
         }
     }

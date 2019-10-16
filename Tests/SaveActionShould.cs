@@ -16,8 +16,8 @@ namespace Tests
         [SetUp]
         public void SetUp()
         {
-            saveAction = new SaveAction(new StringCalculator(), new PersistenceFile());
             filePath = @"C:\Users\apenate\Desktop\StringCalculatorKata\LogTest.txt";
+            saveAction = new SaveAction(new StringCalculator(), new PersistenceFile(filePath));
         }
 
         [Test]
@@ -25,7 +25,7 @@ namespace Tests
         {
             var given = "1,2";
 
-            saveAction.execute(given, filePath);
+            saveAction.execute(given);
 
             using (StreamReader streamReader = new StreamReader(filePath))
             {
@@ -39,7 +39,7 @@ namespace Tests
         {
             var given = "1,4,-1";
 
-            saveAction.execute(given, filePath);
+            saveAction.execute(given);
 
             using (StreamReader streamReader = new StreamReader(filePath))
             {

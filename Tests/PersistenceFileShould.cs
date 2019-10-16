@@ -16,7 +16,7 @@ namespace Tests
         public void SetUp()
         {
             path = @"C:\Users\apenate\Desktop\StringCalculatorKata\TestFile.txt";
-            persistenceFile = new PersistenceFile();
+            persistenceFile = new PersistenceFile(path);
         }
 
         [Test]
@@ -24,7 +24,7 @@ namespace Tests
         {
             var given = path;
 
-            persistenceFile.Save("Test line", 3, path);
+            persistenceFile.Save("Test line", 3);
             using (StreamReader streamReader = new StreamReader(path))
             {
                 string when = streamReader.ReadLine();

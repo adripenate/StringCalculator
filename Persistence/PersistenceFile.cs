@@ -5,7 +5,14 @@ namespace Persistence
 {
     public class PersistenceFile : IPersistence
     {
-        public void Save(string operation, int result, string path)
+        private string path;
+
+        public PersistenceFile(string path)
+        {
+            this.path = path;
+        }
+
+        public void Save(string operation, int result)
         {
             using (StreamWriter streamWriter = new StreamWriter(path))
             {
@@ -13,7 +20,7 @@ namespace Persistence
             }
         }
 
-        public void Save(string operation, Exception error, string path)
+        public void Save(string operation, Exception error)
         {
             using (StreamWriter streamWriter = new StreamWriter(path))
             {
