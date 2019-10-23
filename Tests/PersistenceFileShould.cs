@@ -15,7 +15,7 @@ namespace Tests
         [SetUp]
         public void SetUp()
         {
-            path = @"C:\Users\apenate\Desktop\StringCalculatorKata\TestFile.txt";
+            path = @".\TestFile.txt";
             persistenceFile = new PersistenceFile(path);
         }
 

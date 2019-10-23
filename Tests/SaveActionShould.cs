@@ -16,7 +16,7 @@ namespace Tests
         [SetUp]
         public void SetUp()
         {
-            filePath = @"C:\Users\apenate\Desktop\StringCalculatorKata\LogTest.txt";
+            filePath = @".\LogTest.txt";
             saveAction = new SaveAction(new StringCalculator(), new PersistenceFile(filePath));
         }
 
