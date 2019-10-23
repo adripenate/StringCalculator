@@ -18,11 +18,6 @@ steps:
   inputs:
         version: '3.0.100'
         performMultiLevelLookup: true
-- task: NuGetCommand@2
-  inputs:
-    command: 'restore'
-    feedsToUse: Select
-    restoreSolution: '**/*.sln'
 - task: DotNetCoreCLI@2
   displayName: Build
   inputs:
