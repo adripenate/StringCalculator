@@ -17,7 +17,7 @@ namespace Tests
         }
 
         [Test]
-        public void return_0_when_empty_string()
+        public void sum_0_when_empty_string()
         {
             var emptyString = "";
             
