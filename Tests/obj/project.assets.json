@@ -1570,7 +1570,7 @@
       },
       "Kata/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.0",
+        "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Model": "1.0.0",
           "Persistence": "1.0.0"
@@ -1584,7 +1584,7 @@
       },
       "Model/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.0",
+        "framework": ".NETStandard,Version=v2.1",
         "compile": {
           "bin/placeholder/Model.dll": {}
         },
@@ -1594,7 +1594,7 @@
       },
       "Persistence/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.0",
+        "framework": ".NETStandard,Version=v2.1",
         "compile": {
           "bin/placeholder/Persistence.dll": {}
         },

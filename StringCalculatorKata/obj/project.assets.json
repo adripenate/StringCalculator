@@ -1,10 +1,10 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {
+    ".NETStandard,Version=v2.1": {
       "Model/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.0",
+        "framework": ".NETStandard,Version=v2.1",
         "compile": {
           "bin/placeholder/Model.dll": {}
         },
@@ -14,7 +14,7 @@
       },
       "Persistence/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.0",
+        "framework": ".NETStandard,Version=v2.1",
         "compile": {
           "bin/placeholder/Persistence.dll": {}
         },
@@ -37,7 +37,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": [
+    ".NETStandard,Version=v2.1": [
       "Model >= 1.0.0",
       "Persistence >= 1.0.0"
     ]
@@ -64,7 +64,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.0"
+        "netstandard2.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -72,7 +72,7 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.0": {
+        "netstandard2.1": {
           "projectReferences": {
             "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Model\\Model.csproj": {
               "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Model\\Model.csproj"
@@ -90,7 +90,7 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.0": {
+      "netstandard2.1": {
         "imports": [
           "net461",
           "net462",
@@ -102,7 +102,7 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.NETCore.App": {
+          "NETStandard.Library": {
             "privateAssets": "all"
           }
         },

@@ -1,0 +1,13 @@
+C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\bin\Debug\netstandard2.1\Kata.deps.json
+C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\bin\Debug\netstandard2.1\Kata.dll
+C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\bin\Debug\netstandard2.1\Kata.pdb
+C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\bin\Debug\netstandard2.1\Model.dll
+C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\bin\Debug\netstandard2.1\Persistence.dll
+C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\bin\Debug\netstandard2.1\Model.pdb
+C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\bin\Debug\netstandard2.1\Persistence.pdb
+C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\obj\Debug\netstandard2.1\Kata.csprojAssemblyReference.cache
+C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\obj\Debug\netstandard2.1\Kata.AssemblyInfoInputs.cache
+C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\obj\Debug\netstandard2.1\Kata.AssemblyInfo.cs
+C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\obj\Debug\netstandard2.1\Kata.csproj.CopyComplete
+C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\obj\Debug\netstandard2.1\Kata.dll
+C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorKata\obj\Debug\netstandard2.1\Kata.pdb

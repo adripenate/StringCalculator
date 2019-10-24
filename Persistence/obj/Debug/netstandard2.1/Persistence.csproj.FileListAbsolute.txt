@@ -1,0 +1,8 @@
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\bin\Debug\netstandard2.1\Persistence.deps.json
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\bin\Debug\netstandard2.1\Persistence.dll
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\bin\Debug\netstandard2.1\Persistence.pdb
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\obj\Debug\netstandard2.1\Persistence.csprojAssemblyReference.cache
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\obj\Debug\netstandard2.1\Persistence.AssemblyInfoInputs.cache
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\obj\Debug\netstandard2.1\Persistence.AssemblyInfo.cs
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\obj\Debug\netstandard2.1\Persistence.dll
+C:\Users\apenate\Desktop\StringCalculatorKata\Persistence\obj\Debug\netstandard2.1\Persistence.pdb
