@@ -17,7 +17,7 @@ namespace StringCalculatorApi.Controllers
         public ActionResult<StringCalculatorResult> PostStringCalculator(StringCalculatorModel stringCalculatorModel)
         {
             var saveAction = new SaveAction(new StringCalculator(), new PersistenceFile(@"..\OperationLog.txt"));
-            var stringCalculatorResult = saveAction.execute(stringCalculatorModel.Numbers);
+            var stringCalculatorResult = saveAction.Execute(stringCalculatorModel.Numbers);
             return stringCalculatorResult ?? (ActionResult<StringCalculatorResult>) BadRequest(postErrorMessage);
         }
     }

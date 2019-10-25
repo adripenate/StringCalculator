@@ -25,7 +25,7 @@ namespace Tests
         {
             var operation = "1,2";
 
-            saveAction.execute(operation);
+            saveAction.Execute(operation);
 
             using (StreamReader streamReader = new StreamReader(filePath))
             {
@@ -39,7 +39,7 @@ namespace Tests
         {
             var operation = "1,4,-1";
 
-            saveAction.execute(operation);
+            saveAction.Execute(operation);
 
             using (StreamReader streamReader = new StreamReader(filePath))
             {

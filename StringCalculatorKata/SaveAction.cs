@@ -15,7 +15,7 @@ namespace Kata
             this.persistenceFile = persistenceFile;
         }
 
-        public StringCalculatorResult execute(string numbers)
+        public StringCalculatorResult Execute(string numbers)
         {
             StringCalculatorResult stringCalculatorResult = null;
             try
