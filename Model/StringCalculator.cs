@@ -15,7 +15,7 @@ namespace Model
         public int Add(string chainNumbers)
         {
             if (IsEmpty(chainNumbers)) return 0;
-            char delimiter = ExtractDelimiter(chainNumbers);
+            var delimiter = ExtractDelimiter(chainNumbers);
             return SumOf(SeparateNumbers(chainNumbers, delimiter));
         }
 
@@ -50,10 +50,10 @@ namespace Model
             return numbers.Length == 0;
         }
 
-        private static int SumOf(String[] numbers)
+        private static int SumOf(string[] numbers)
         {
             int result = 0;
-            String negativeNumbers = "";
+            string negativeNumbers = "";
             foreach(String number in numbers){
                 if (IsNegative(number)) negativeNumbers += number + " ";
                 if(IsNotBiggerThan1000(number)) result += ValueOf(number);
@@ -77,7 +77,7 @@ namespace Model
             return ValueOf(number) < MinNumberValue;
         }
 
-        private static int ValueOf(String number)
+        private static int ValueOf(string number)
         {
             return int.Parse(number);
         }
