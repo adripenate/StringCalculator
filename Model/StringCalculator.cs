@@ -4,13 +4,13 @@ namespace Model
 {
     public class StringCalculator
     {
-        private const char DEFAULT_DELIMITER = ',';
-        private const string START_OF_DELIMITER_LINE = "//";
-        private const char NEW_LINE = '\n';
-        private const int MAX_NUMBER_VALUE = 1000;
-        private const int MIN_NUMBER_VALUE = 0;
-        private const int DELIMITER_POSITION = 2;
-        private const int START_OF_NUMBERS_LINE = 4;
+        private const char DefaultDelimiter = ',';
+        private const string StartOfDelimiterLine = "//";
+        private const char NewLine = '\n';
+        private const int MaxNumberValue = 1000;
+        private const int MinNumberValue = 0;
+        private const int DelimiterPosition = 2;
+        private const int StartOfNumbersLine = 4;
 
         public int Add(string chainNumbers)
         {
@@ -21,22 +21,22 @@ namespace Model
 
         private static char ExtractDelimiter(string numbers)
         {
-            return HasSpecialDelimiter(numbers) ? numbers[DELIMITER_POSITION] : DEFAULT_DELIMITER;
+            return HasSpecialDelimiter(numbers) ? numbers[DelimiterPosition] : DefaultDelimiter;
         }
 
         private static string GetWithoutDelimiterLine(string numbers)
         {
-            return HasSpecialDelimiter(numbers) ? numbers.Substring(START_OF_NUMBERS_LINE) : numbers;
+            return HasSpecialDelimiter(numbers) ? numbers.Substring(StartOfNumbersLine) : numbers;
         }
 
         private static bool HasSpecialDelimiter(string numbers)
         {
-            return numbers.Contains(START_OF_DELIMITER_LINE);
+            return numbers.Contains(StartOfDelimiterLine);
         }
 
         private static string GetCorrectFormat(string numbers, char delimiter)
         {
-            return numbers.Replace(NEW_LINE, delimiter);
+            return numbers.Replace(NewLine, delimiter);
         }
 
         private static string[] SeparateNumbers(string numbers, char delimiter)
@@ -69,12 +69,12 @@ namespace Model
 
         private static bool IsNotBiggerThan1000(string number)
         {
-            return ValueOf(number) <= MAX_NUMBER_VALUE;
+            return ValueOf(number) <= MaxNumberValue;
         }
 
         private static bool IsNegative(string number)
         {
-            return ValueOf(number) < MIN_NUMBER_VALUE;
+            return ValueOf(number) < MinNumberValue;
         }
 
         private static int ValueOf(String number)
