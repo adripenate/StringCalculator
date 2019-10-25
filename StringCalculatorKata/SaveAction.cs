@@ -17,19 +17,17 @@ namespace Kata
 
         public StringCalculatorResult Execute(string numbers)
         {
-            StringCalculatorResult stringCalculatorResult = null;
             try
             {
                 var result = stringCalculator.Add(numbers);
-                stringCalculatorResult = new StringCalculatorResult {Result = result};
                 persistenceFile.Save(numbers, result);
+                return new StringCalculatorResult {Result = result};
             } 
             catch (Exception exception)
             {
                 persistenceFile.Save(numbers, exception);
             }
-
-            return stringCalculatorResult;
+            return null;
         }
     }
 }
