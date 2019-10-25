@@ -17,3 +17,4 @@
 -1 -> negatives not allowed: -1
 1,100 -> El resultado es 101
 1,-100 -> negatives not allowed: -100
+1,-100 -> negatives not allowed: -100
