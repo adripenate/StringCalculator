@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace StringCalculatorApi.Models
+﻿namespace StringCalculatorApi.Models
 {
     public class StringCalculatorModel
     {

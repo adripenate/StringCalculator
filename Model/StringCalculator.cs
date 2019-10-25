@@ -14,70 +14,70 @@ namespace Model
 
         public int Add(string chainNumbers)
         {
-            if (isEmpty(chainNumbers)) return 0;
-            char delimiter = extractDelimiter(chainNumbers);
-            return sumOf(separateNumbers(chainNumbers, delimiter));
+            if (IsEmpty(chainNumbers)) return 0;
+            char delimiter = ExtractDelimiter(chainNumbers);
+            return SumOf(SeparateNumbers(chainNumbers, delimiter));
         }
 
-        private static char extractDelimiter(string numbers)
+        private static char ExtractDelimiter(string numbers)
         {
-            return hasSpecialDelimiter(numbers) ? numbers[DELIMITER_POSITION] : DEFAULT_DELIMITER;
+            return HasSpecialDelimiter(numbers) ? numbers[DELIMITER_POSITION] : DEFAULT_DELIMITER;
         }
 
-        private static string getWithoutDelimiterLine(string numbers)
+        private static string GetWithoutDelimiterLine(string numbers)
         {
-            return hasSpecialDelimiter(numbers) ? numbers.Substring(START_OF_NUMBERS_LINE) : numbers;
+            return HasSpecialDelimiter(numbers) ? numbers.Substring(START_OF_NUMBERS_LINE) : numbers;
         }
 
-        private static bool hasSpecialDelimiter(string numbers)
+        private static bool HasSpecialDelimiter(string numbers)
         {
             return numbers.Contains(START_OF_DELIMITER_LINE);
         }
 
-        private static string getCorrectFormat(string numbers, char delimiter)
+        private static string GetCorrectFormat(string numbers, char delimiter)
         {
             return numbers.Replace(NEW_LINE, delimiter);
         }
 
-        private static string[] separateNumbers(string numbers, char delimiter)
+        private static string[] SeparateNumbers(string numbers, char delimiter)
         {
-            numbers = getCorrectFormat(getWithoutDelimiterLine(numbers), delimiter);
+            numbers = GetCorrectFormat(GetWithoutDelimiterLine(numbers), delimiter);
             return numbers.Split(new char[] {delimiter}, StringSplitOptions.None);
         }
 
-        private static bool isEmpty(string numbers)
+        private static bool IsEmpty(string numbers)
         {
             return numbers.Length == 0;
         }
 
-        private static int sumOf(String[] numbers)
+        private static int SumOf(String[] numbers)
         {
             int result = 0;
             String negativeNumbers = "";
             foreach(String number in numbers){
-                if (isNegative(number)) negativeNumbers += number + " ";
-                if(isNotBiggerThan1000(number)) result += valueOf(number);
+                if (IsNegative(number)) negativeNumbers += number + " ";
+                if(IsNotBiggerThan1000(number)) result += ValueOf(number);
             }
-            if(!isEmpty(negativeNumbers)) generateException(negativeNumbers);
+            if(!IsEmpty(negativeNumbers)) GenerateException(negativeNumbers);
             return result;
         }
 
-        private static void generateException(string negativeNumbers)
+        private static void GenerateException(string negativeNumbers)
         {
             throw new Exception("negatives not allowed: " + negativeNumbers.Trim());
         }
 
-        private static bool isNotBiggerThan1000(string number)
+        private static bool IsNotBiggerThan1000(string number)
         {
-            return valueOf(number) <= MAX_NUMBER_VALUE;
+            return ValueOf(number) <= MAX_NUMBER_VALUE;
         }
 
-        private static bool isNegative(string number)
+        private static bool IsNegative(string number)
         {
-            return valueOf(number) < MIN_NUMBER_VALUE;
+            return ValueOf(number) < MIN_NUMBER_VALUE;
         }
 
-        private static int valueOf(String number)
+        private static int ValueOf(String number)
         {
             return int.Parse(number);
         }
