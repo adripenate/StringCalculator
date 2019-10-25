@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kata", "StringCalculatorKat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{B5E70A1A-EF64-48D7-957B-9C484F112255}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{ED777301-8003-493C-A23A-1FC45793AA24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{ED777301-8003-493C-A23A-1FC45793AA24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{12C52369-1C3B-462D-A061-24A10B27B1A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\Persistence.csproj", "{12C52369-1C3B-462D-A061-24A10B27B1A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculatorApi", "StringCalculatorApi\StringCalculatorApi.csproj", "{D40E8A0E-CA1D-4EBC-8F19-0F00BD7F2542}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{12C52369-1C3B-462D-A061-24A10B27B1A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12C52369-1C3B-462D-A061-24A10B27B1A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12C52369-1C3B-462D-A061-24A10B27B1A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D40E8A0E-CA1D-4EBC-8F19-0F00BD7F2542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D40E8A0E-CA1D-4EBC-8F19-0F00BD7F2542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D40E8A0E-CA1D-4EBC-8F19-0F00BD7F2542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D40E8A0E-CA1D-4EBC-8F19-0F00BD7F2542}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

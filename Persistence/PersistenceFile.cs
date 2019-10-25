@@ -24,7 +24,7 @@ namespace Persistence
 
         private void Write(string line)
         {
-            using (StreamWriter streamWriter = new StreamWriter(path))
+            using (StreamWriter streamWriter = new StreamWriter(path, append: true))
             {
                 streamWriter.WriteLine(line);
             }

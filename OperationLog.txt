@@ -1,0 +1,6 @@
+1
+6,7 -> El resultado es 14
+1
+6,7 -> El resultado es 14
+1,6,4 -> El resultado es 11
+1 -> El resultado es 1
