@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Model
 {
@@ -15,14 +16,19 @@ namespace Model
         public int Add(string chainNumbers)
         {
             if (IsEmpty(chainNumbers)) return 0;
-            return SumOf(SeparateNumbers(chainNumbers));
+            return SumOf(ExtractNumbersFrom(chainNumbers));
+        }
+
+        private static int[] ExtractNumbersFrom(string numbers)
+        {
+            return SeparateNumbers(numbers).Select(int.Parse).ToArray();
         }
 
         private static string[] SeparateNumbers(string numbers)
         {
             var delimiter = ExtractDelimiter(numbers);
             numbers = GetCorrectFormat(GetWithoutDelimiterLine(numbers), delimiter);
-            return numbers.Split(new char[] {delimiter}, StringSplitOptions.None);
+            return numbers.Split(new[] {delimiter}, StringSplitOptions.None);
         }
 
         private static char ExtractDelimiter(string numbers)
@@ -50,36 +56,21 @@ namespace Model
             return numbers.Length == 0;
         }
 
-        private static int SumOf(string[] numbers)
+        private static int SumOf(int[] numbers)
         {
-            int result = 0;
-            string negativeNumbers = "";
-            foreach(String number in numbers){
-                if (IsNegative(number)) negativeNumbers += number + " ";
-                if(IsNotBiggerThan1000(number)) result += ValueOf(number);
-            }
-            if(!IsEmpty(negativeNumbers)) GenerateException(negativeNumbers);
-            return result;
+            var negatives = numbers.Where(IsNegative).ToList();
+            if (negatives.Any()) throw new Exception("negatives not allowed: " + string.Join(' ', negatives));
+            return numbers.Where(IsNotBiggerThan1000).Sum();
         }
 
-        private static void GenerateException(string negativeNumbers)
+        private static bool IsNegative(int number)
         {
-            throw new Exception("negatives not allowed: " + negativeNumbers.Trim());
+            return number < MinNumberValue;
         }
 
-        private static bool IsNotBiggerThan1000(string number)
+        private static bool IsNotBiggerThan1000(int number)
         {
-            return ValueOf(number) <= MaxNumberValue;
-        }
-
-        private static bool IsNegative(string number)
-        {
-            return ValueOf(number) < MinNumberValue;
-        }
-
-        private static int ValueOf(string number)
-        {
-            return int.Parse(number);
+            return number <= MaxNumberValue;
         }
     }
 }
