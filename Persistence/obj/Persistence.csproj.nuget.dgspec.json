@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Persistence\\Persistence.csproj": {}
+    "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\apenate\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

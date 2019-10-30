@@ -9,7 +9,6 @@
       "Tests/1.0.0": {
         "dependencies": {
           "FluentAssertions": "5.9.0",
-          "Kata": "1.0.0",
           "MSTest.TestAdapter": "1.4.0",
           "MSTest.TestFramework": "1.4.0",
           "Microsoft.NET.Test.Sdk": "16.0.1",
@@ -17,7 +16,8 @@
           "NSubstitute": "4.2.1",
           "NUnit": "3.12.0",
           "NUnit3TestAdapter": "3.15.1",
-          "Persistence": "1.0.0"
+          "Persistence": "1.0.0",
+          "UseCases": "1.0.0"
         },
         "runtime": {
           "Tests.dll": {}
@@ -1136,15 +1136,6 @@
           }
         }
       },
-      "Kata/1.0.0": {
-        "dependencies": {
-          "Model": "1.0.0",
-          "Persistence": "1.0.0"
-        },
-        "runtime": {
-          "Kata.dll": {}
-        }
-      },
       "Model/1.0.0": {
         "runtime": {
           "Model.dll": {}
@@ -1153,6 +1144,15 @@
       "Persistence/1.0.0": {
         "runtime": {
           "Persistence.dll": {}
+        }
+      },
+      "UseCases/1.0.0": {
+        "dependencies": {
+          "Model": "1.0.0",
+          "Persistence": "1.0.0"
+        },
+        "runtime": {
+          "UseCases.dll": {}
         }
       }
     }
@@ -1730,17 +1730,17 @@
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
     },
-    "Kata/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "Persistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UseCases/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

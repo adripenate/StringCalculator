@@ -19,7 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj" />
     <ProjectReference Include="..\Persistence\Persistence.csproj" />
-    <ProjectReference Include="..\StringCalculatorKata\Kata.csproj" />
+    <ProjectReference Include="..\StringCalculatorKata\UseCases.csproj" />
   </ItemGroup>
 
 </Project>

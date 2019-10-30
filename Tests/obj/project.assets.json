@@ -1568,20 +1568,6 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "Kata/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.1",
-        "dependencies": {
-          "Model": "1.0.0",
-          "Persistence": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Kata.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Kata.dll": {}
-        }
-      },
       "Model/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
@@ -1600,6 +1586,20 @@
         },
         "runtime": {
           "bin/placeholder/Persistence.dll": {}
+        }
+      },
+      "UseCases/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Model": "1.0.0",
+          "Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UseCases.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UseCases.dll": {}
         }
       }
     }
@@ -5733,11 +5733,6 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "Kata/1.0.0": {
-      "type": "project",
-      "path": "../StringCalculatorKata/Kata.csproj",
-      "msbuildProject": "../StringCalculatorKata/Kata.csproj"
-    },
     "Model/1.0.0": {
       "type": "project",
       "path": "../Model/Model.csproj",
@@ -5747,12 +5742,16 @@
       "type": "project",
       "path": "../Persistence/Persistence.csproj",
       "msbuildProject": "../Persistence/Persistence.csproj"
+    },
+    "UseCases/1.0.0": {
+      "type": "project",
+      "path": "../StringCalculatorKata/UseCases.csproj",
+      "msbuildProject": "../StringCalculatorKata/UseCases.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "FluentAssertions >= 5.9.0",
-      "Kata >= 1.0.0",
       "MSTest.TestAdapter >= 1.4.0",
       "MSTest.TestFramework >= 1.4.0",
       "Microsoft.NET.Test.Sdk >= 16.0.1",
@@ -5760,7 +5759,8 @@
       "NSubstitute >= 4.2.1",
       "NUnit >= 3.12.0",
       "NUnit3TestAdapter >= 3.15.1",
-      "Persistence >= 1.0.0"
+      "Persistence >= 1.0.0",
+      "UseCases >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5770,11 +5770,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Tests\\Tests.csproj",
+      "projectUniqueName": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Tests\\Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Tests\\Tests.csproj",
+      "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Tests\\Tests.csproj",
       "packagesPath": "C:\\Users\\apenate\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Tests\\obj\\",
+      "outputPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5795,14 +5795,14 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Model\\Model.csproj"
+            "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\Model.csproj"
             },
-            "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Persistence\\Persistence.csproj"
+            "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.csproj"
             },
-            "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\StringCalculatorKata\\Kata.csproj": {
-              "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\StringCalculatorKata\\Kata.csproj"
+            "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\UseCases.csproj": {
+              "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\UseCases.csproj"
             }
           }
         }

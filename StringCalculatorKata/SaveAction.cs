@@ -1,8 +1,8 @@
-﻿using Persistence;
+﻿using System;
 using Model;
-using System;
+using Persistence;
 
-namespace Kata
+namespace UseCases
 {
     public class SaveAction
     {

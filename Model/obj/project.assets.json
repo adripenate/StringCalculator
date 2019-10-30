@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Model\\Model.csproj",
+      "projectUniqueName": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Model\\Model.csproj",
+      "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\Model.csproj",
       "packagesPath": "C:\\Users\\apenate\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\apenate\\Desktop\\StringCalculatorKata\\Model\\obj\\",
+      "outputPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

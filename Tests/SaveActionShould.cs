@@ -1,9 +1,9 @@
 ﻿using Model;
 using Persistence;
-using Kata;
 using NUnit.Framework;
 using FluentAssertions;
 using System.IO;
+using UseCases;
 
 namespace Tests
 {

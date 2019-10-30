@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\apenate\\Desktop\\StringCalculator\\Tests\\Tests.csproj": {}
+    "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\UseCases.csproj": {}
   },
   "projects": {
     "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\Model.csproj": {
@@ -175,103 +175,6 @@
           "warn": true,
           "frameworkReferences": {
             "NETStandard.Library": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\apenate\\Desktop\\StringCalculator\\Tests\\Tests.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Tests\\Tests.csproj",
-        "projectName": "Tests",
-        "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Tests\\Tests.csproj",
-        "packagesPath": "C:\\Users\\apenate\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Tests\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\apenate\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "G:\\DevExpress18.2\\Components\\System\\Components\\Packages": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.0": {
-            "projectReferences": {
-              "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\Model.csproj"
-              },
-              "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.csproj"
-              },
-              "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\UseCases.csproj": {
-                "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\UseCases.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.0": {
-          "dependencies": {
-            "FluentAssertions": {
-              "target": "Package",
-              "version": "[5.9.0, )"
-            },
-            "MSTest.TestAdapter": {
-              "target": "Package",
-              "version": "[1.4.0, )"
-            },
-            "MSTest.TestFramework": {
-              "target": "Package",
-              "version": "[1.4.0, )"
-            },
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[16.0.1, )"
-            },
-            "NSubstitute": {
-              "target": "Package",
-              "version": "[4.2.1, )"
-            },
-            "NUnit": {
-              "target": "Package",
-              "version": "[3.12.0, )"
-            },
-            "NUnit3TestAdapter": {
-              "target": "Package",
-              "version": "[3.15.1, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
