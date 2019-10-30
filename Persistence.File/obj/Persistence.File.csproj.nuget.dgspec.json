@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\UseCases.csproj": {}
+    "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence.File\\Persistence.File.csproj": {}
   },
   "projects": {
     "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\Model.csproj": {
@@ -61,14 +61,14 @@
         }
       }
     },
-    "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\UseCases.csproj": {
+    "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence.File\\Persistence.File.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\UseCases.csproj",
-        "projectName": "UseCases",
-        "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\UseCases.csproj",
+        "projectUniqueName": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence.File\\Persistence.File.csproj",
+        "projectName": "Persistence.File",
+        "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence.File\\Persistence.File.csproj",
         "packagesPath": "C:\\Users\\apenate\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\obj\\",
+        "outputPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence.File\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

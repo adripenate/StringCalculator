@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\UseCases.csproj",
+      "projectUniqueName": "C:\\Users\\apenate\\Desktop\\StringCalculator\\UseCases\\UseCases.csproj",
       "projectName": "UseCases",
-      "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\UseCases.csproj",
+      "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\UseCases\\UseCases.csproj",
       "packagesPath": "C:\\Users\\apenate\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\obj\\",
+      "outputPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\UseCases\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

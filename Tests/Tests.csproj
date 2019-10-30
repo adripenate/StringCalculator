@@ -18,8 +18,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj" />
-    <ProjectReference Include="..\Persistence\Persistence.File.csproj" />
-    <ProjectReference Include="..\StringCalculatorKata\UseCases.csproj" />
+    <ProjectReference Include="..\Persistence.File\Persistence.File.csproj" />
+    <ProjectReference Include="..\UseCases\UseCases.csproj" />
   </ItemGroup>
 
 </Project>

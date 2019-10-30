@@ -5742,13 +5742,13 @@
     },
     "Persistence.File/1.0.0": {
       "type": "project",
-      "path": "../Persistence/Persistence.File.csproj",
-      "msbuildProject": "../Persistence/Persistence.File.csproj"
+      "path": "../Persistence.File/Persistence.File.csproj",
+      "msbuildProject": "../Persistence.File/Persistence.File.csproj"
     },
     "UseCases/1.0.0": {
       "type": "project",
-      "path": "../StringCalculatorKata/UseCases.csproj",
-      "msbuildProject": "../StringCalculatorKata/UseCases.csproj"
+      "path": "../UseCases/UseCases.csproj",
+      "msbuildProject": "../UseCases/UseCases.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5800,11 +5800,11 @@
             "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\Model.csproj": {
               "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\Model.csproj"
             },
-            "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.File.csproj": {
-              "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.File.csproj"
+            "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence.File\\Persistence.File.csproj": {
+              "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence.File\\Persistence.File.csproj"
             },
-            "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\UseCases.csproj": {
-              "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\UseCases.csproj"
+            "C:\\Users\\apenate\\Desktop\\StringCalculator\\UseCases\\UseCases.csproj": {
+              "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\UseCases\\UseCases.csproj"
             }
           }
         }

@@ -1,5 +1,4 @@
 ﻿using Model;
-using Persistence;
 using NUnit.Framework;
 using FluentAssertions;
 using System.IO;
