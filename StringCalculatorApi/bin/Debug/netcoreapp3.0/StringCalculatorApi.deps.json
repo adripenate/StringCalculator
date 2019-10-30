@@ -24,14 +24,14 @@
     ".NETCoreApp,Version=v3.0": {
       "StringCalculatorApi/1.0.0": {
         "dependencies": {
-          "Kata": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "3.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "3.0.0",
           "Microsoft.Extensions.Logging.Debug": "3.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.0.0",
           "Model": "1.0.0",
-          "Persistence": "1.0.0",
+          "Persistence.File": "1.0.0",
+          "UseCases": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.0.0.0",
@@ -2007,18 +2007,6 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
-      "Kata/1.0.0": {
-        "dependencies": {
-          "Model": "1.0.0",
-          "Persistence": "1.0.0"
-        },
-        "runtime": {
-          "Kata.dll": {}
-        },
-        "compile": {
-          "Kata.dll": {}
-        }
-      },
       "Model/1.0.0": {
         "runtime": {
           "Model.dll": {}
@@ -2027,12 +2015,26 @@
           "Model.dll": {}
         }
       },
-      "Persistence/1.0.0": {
+      "Persistence.File/1.0.0": {
+        "dependencies": {
+          "Model": "1.0.0"
+        },
         "runtime": {
-          "Persistence.dll": {}
+          "Persistence.File.dll": {}
         },
         "compile": {
-          "Persistence.dll": {}
+          "Persistence.File.dll": {}
+        }
+      },
+      "UseCases/1.0.0": {
+        "dependencies": {
+          "Model": "1.0.0"
+        },
+        "runtime": {
+          "UseCases.dll": {}
+        },
+        "compile": {
+          "UseCases.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
@@ -4799,17 +4801,17 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
-    "Kata/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Persistence/1.0.0": {
+    "Persistence.File/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UseCases/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

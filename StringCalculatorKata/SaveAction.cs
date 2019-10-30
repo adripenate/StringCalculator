@@ -25,8 +25,8 @@ namespace UseCases
             catch (Exception exception)
             {
                 persistenceFile.Save(numbers, exception);
+                return null;
             }
-            return null;
         }
     }
 }

@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Model;
-using Persistence;
 using Persistence.File;
 using StringCalculatorApi.Models;
 using UseCases;
@@ -18,12 +16,11 @@ namespace StringCalculatorApi.Controllers
         {
             var saveAction = new SaveAction(new StringCalculator(), new PersistenceFile(@"..\OperationLog.txt"));
             var stringCalculatorResult = saveAction.Execute(stringCalculatorModel.Numbers);
-            return stringCalculatorResult ?? (ActionResult<StringCalculatorResult>) BadRequest(new ErrorMessage {Error = "Negative numbers not allowed"});
+            if (stringCalculatorResult == null)
+            {
+                return BadRequest(new ErrorMessage() { Error = "Negative numbers not allowed" });
+            }
+            return stringCalculatorResult;
         }
-    }
-
-    public class ErrorMessage : ModelStateDictionary
-    {
-        public string Error { get; set; }
     }
 }
