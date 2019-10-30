@@ -114,3 +114,6 @@ C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorApi\bin\Debug\netc
 C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorApi\bin\Debug\netcoreapp3.0\Persistence.dll
 C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorApi\bin\Debug\netcoreapp3.0\Persistence.pdb
 C:\Users\apenate\Desktop\StringCalculatorKata\StringCalculatorApi\bin\Debug\netcoreapp3.0\Kata.pdb
+C:\Users\apenate\Desktop\StringCalculator\StringCalculatorApi\obj\Debug\netcoreapp3.0\StringCalculatorApi.csprojAssemblyReference.cache
+C:\Users\apenate\Desktop\StringCalculator\StringCalculatorApi\obj\Debug\netcoreapp3.0\StringCalculatorApi.dll
+C:\Users\apenate\Desktop\StringCalculator\StringCalculatorApi\obj\Debug\netcoreapp3.0\StringCalculatorApi.pdb

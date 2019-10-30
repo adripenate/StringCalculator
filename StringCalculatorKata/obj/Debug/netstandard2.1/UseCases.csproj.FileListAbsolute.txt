@@ -2,9 +2,7 @@ C:\Users\apenate\Desktop\StringCalculator\StringCalculatorKata\bin\Debug\netstan
 C:\Users\apenate\Desktop\StringCalculator\StringCalculatorKata\bin\Debug\netstandard2.1\UseCases.dll
 C:\Users\apenate\Desktop\StringCalculator\StringCalculatorKata\bin\Debug\netstandard2.1\UseCases.pdb
 C:\Users\apenate\Desktop\StringCalculator\StringCalculatorKata\bin\Debug\netstandard2.1\Model.dll
-C:\Users\apenate\Desktop\StringCalculator\StringCalculatorKata\bin\Debug\netstandard2.1\Persistence.dll
 C:\Users\apenate\Desktop\StringCalculator\StringCalculatorKata\bin\Debug\netstandard2.1\Model.pdb
-C:\Users\apenate\Desktop\StringCalculator\StringCalculatorKata\bin\Debug\netstandard2.1\Persistence.pdb
 C:\Users\apenate\Desktop\StringCalculator\StringCalculatorKata\obj\Debug\netstandard2.1\UseCases.csprojAssemblyReference.cache
 C:\Users\apenate\Desktop\StringCalculator\StringCalculatorKata\obj\Debug\netstandard2.1\UseCases.AssemblyInfoInputs.cache
 C:\Users\apenate\Desktop\StringCalculator\StringCalculatorKata\obj\Debug\netstandard2.1\UseCases.AssemblyInfo.cs

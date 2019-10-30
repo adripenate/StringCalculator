@@ -9,8 +9,7 @@
     ".NETStandard,Version=v2.1/": {
       "UseCases/1.0.0": {
         "dependencies": {
-          "Model": "1.0.0",
-          "Persistence": "1.0.0"
+          "Model": "1.0.0"
         },
         "runtime": {
           "UseCases.dll": {}
@@ -19,11 +18,6 @@
       "Model/1.0.0": {
         "runtime": {
           "Model.dll": {}
-        }
-      },
-      "Persistence/1.0.0": {
-        "runtime": {
-          "Persistence.dll": {}
         }
       }
     }
@@ -35,11 +29,6 @@
       "sha512": ""
     },
     "Model/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Persistence/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

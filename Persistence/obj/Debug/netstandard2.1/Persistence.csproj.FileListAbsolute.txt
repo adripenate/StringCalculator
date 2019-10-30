@@ -14,3 +14,6 @@ C:\Users\apenate\Desktop\StringCalculator\Persistence\obj\Debug\netstandard2.1\P
 C:\Users\apenate\Desktop\StringCalculator\Persistence\obj\Debug\netstandard2.1\Persistence.AssemblyInfo.cs
 C:\Users\apenate\Desktop\StringCalculator\Persistence\obj\Debug\netstandard2.1\Persistence.dll
 C:\Users\apenate\Desktop\StringCalculator\Persistence\obj\Debug\netstandard2.1\Persistence.pdb
+C:\Users\apenate\Desktop\StringCalculator\Persistence\bin\Debug\netstandard2.1\Model.dll
+C:\Users\apenate\Desktop\StringCalculator\Persistence\bin\Debug\netstandard2.1\Model.pdb
+C:\Users\apenate\Desktop\StringCalculator\Persistence\obj\Debug\netstandard2.1\Persistence.csproj.CopyComplete

@@ -1581,6 +1581,9 @@
       "Persistence/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Model": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Persistence.dll": {}
         },
@@ -1592,8 +1595,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "Model": "1.0.0",
-          "Persistence": "1.0.0"
+          "Model": "1.0.0"
         },
         "compile": {
           "bin/placeholder/UseCases.dll": {}

@@ -88,7 +88,11 @@
         },
         "frameworks": {
           "netstandard2.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -244,9 +248,6 @@
             "projectReferences": {
               "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\Model.csproj": {
                 "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\Model.csproj"
-              },
-              "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.csproj"
               }
             }
           }

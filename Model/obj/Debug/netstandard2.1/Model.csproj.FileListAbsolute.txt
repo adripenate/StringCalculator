@@ -9,7 +9,6 @@ C:\Users\apenate\Desktop\StringCalculatorKata\Model\obj\Debug\netstandard2.1\Mod
 C:\Users\apenate\Desktop\StringCalculator\Model\bin\Debug\netstandard2.1\Model.deps.json
 C:\Users\apenate\Desktop\StringCalculator\Model\bin\Debug\netstandard2.1\Model.dll
 C:\Users\apenate\Desktop\StringCalculator\Model\bin\Debug\netstandard2.1\Model.pdb
-C:\Users\apenate\Desktop\StringCalculator\Model\obj\Debug\netstandard2.1\Model.csprojAssemblyReference.cache
 C:\Users\apenate\Desktop\StringCalculator\Model\obj\Debug\netstandard2.1\Model.AssemblyInfoInputs.cache
 C:\Users\apenate\Desktop\StringCalculator\Model\obj\Debug\netstandard2.1\Model.AssemblyInfo.cs
 C:\Users\apenate\Desktop\StringCalculator\Model\obj\Debug\netstandard2.1\Model.dll
