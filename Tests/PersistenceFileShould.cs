@@ -3,6 +3,7 @@ using NUnit.Framework;
 using FluentAssertions;
 using Persistence;
 using System.IO;
+using Persistence.File;
 
 namespace Tests
 {

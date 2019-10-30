@@ -61,12 +61,12 @@
         }
       }
     },
-    "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.File.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.csproj",
-        "projectName": "Persistence",
-        "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.File.csproj",
+        "projectName": "Persistence.File",
+        "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.File.csproj",
         "packagesPath": "C:\\Users\\apenate\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
@@ -214,8 +214,8 @@
               "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\Model.csproj": {
                 "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\Model.csproj"
               },
-              "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.csproj"
+              "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.File.csproj": {
+                "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.File.csproj"
               },
               "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\UseCases.csproj": {
                 "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\UseCases.csproj"

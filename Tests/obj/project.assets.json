@@ -1578,17 +1578,17 @@
           "bin/placeholder/Model.dll": {}
         }
       },
-      "Persistence/1.0.0": {
+      "Persistence.File/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Model": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Persistence.dll": {}
+          "bin/placeholder/Persistence.File.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Persistence.dll": {}
+          "bin/placeholder/Persistence.File.dll": {}
         }
       },
       "UseCases/1.0.0": {
@@ -5740,10 +5740,10 @@
       "path": "../Model/Model.csproj",
       "msbuildProject": "../Model/Model.csproj"
     },
-    "Persistence/1.0.0": {
+    "Persistence.File/1.0.0": {
       "type": "project",
-      "path": "../Persistence/Persistence.csproj",
-      "msbuildProject": "../Persistence/Persistence.csproj"
+      "path": "../Persistence/Persistence.File.csproj",
+      "msbuildProject": "../Persistence/Persistence.File.csproj"
     },
     "UseCases/1.0.0": {
       "type": "project",
@@ -5761,7 +5761,7 @@
       "NSubstitute >= 4.2.1",
       "NUnit >= 3.12.0",
       "NUnit3TestAdapter >= 3.15.1",
-      "Persistence >= 1.0.0",
+      "Persistence.File >= 1.0.0",
       "UseCases >= 1.0.0"
     ]
   },
@@ -5800,8 +5800,8 @@
             "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\Model.csproj": {
               "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Model\\Model.csproj"
             },
-            "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.csproj": {
-              "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.csproj"
+            "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.File.csproj": {
+              "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\Persistence\\Persistence.File.csproj"
             },
             "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\UseCases.csproj": {
               "projectPath": "C:\\Users\\apenate\\Desktop\\StringCalculator\\StringCalculatorKata\\UseCases.csproj"

@@ -13,3 +13,4 @@ C:\Users\apenate\Desktop\StringCalculator\Model\obj\Debug\netstandard2.1\Model.A
 C:\Users\apenate\Desktop\StringCalculator\Model\obj\Debug\netstandard2.1\Model.AssemblyInfo.cs
 C:\Users\apenate\Desktop\StringCalculator\Model\obj\Debug\netstandard2.1\Model.dll
 C:\Users\apenate\Desktop\StringCalculator\Model\obj\Debug\netstandard2.1\Model.pdb
+C:\Users\apenate\Desktop\StringCalculator\Model\obj\Debug\netstandard2.1\Model.csprojAssemblyReference.cache

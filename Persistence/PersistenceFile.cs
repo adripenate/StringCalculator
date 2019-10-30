@@ -2,7 +2,7 @@
 using System.IO;
 using Model;
 
-namespace Persistence
+namespace Persistence.File
 {
     public class PersistenceFile : IPersistence
     {

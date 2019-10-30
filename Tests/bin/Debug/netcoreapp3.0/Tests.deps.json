@@ -16,7 +16,7 @@
           "NSubstitute": "4.2.1",
           "NUnit": "3.12.0",
           "NUnit3TestAdapter": "3.15.1",
-          "Persistence": "1.0.0",
+          "Persistence.File": "1.0.0",
           "UseCases": "1.0.0"
         },
         "runtime": {
@@ -1141,12 +1141,12 @@
           "Model.dll": {}
         }
       },
-      "Persistence/1.0.0": {
+      "Persistence.File/1.0.0": {
         "dependencies": {
           "Model": "1.0.0"
         },
         "runtime": {
-          "Persistence.dll": {}
+          "Persistence.File.dll": {}
         }
       },
       "UseCases/1.0.0": {
@@ -1737,7 +1737,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Persistence/1.0.0": {
+    "Persistence.File/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
