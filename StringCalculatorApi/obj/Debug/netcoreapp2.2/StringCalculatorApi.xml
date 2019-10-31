@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StringCalculatorApi</name>
+    </assembly>
+    <members>
+        <member name="M:StringCalculatorApi.Controllers.StringCalculatorController.PostStringCalculator(StringCalculatorApi.Models.StringCalculatorModel)">
+            <summary>
+            Devuelve la suma de una cadena que contiene números.
+            </summary>
+        </member>
+    </members>
+</doc>

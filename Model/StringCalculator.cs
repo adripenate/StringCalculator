@@ -59,7 +59,7 @@ namespace Model
         private static int SumOf(int[] numbers)
         {
             var negatives = numbers.Where(IsNegative).ToList();
-            if (negatives.Any()) throw new Exception("negatives not allowed: " + string.Join(' ', negatives));
+            if (negatives.Any()) throw new Exception("negatives not allowed: " + string.Join(" ", negatives));
             return numbers.Where(IsNotBiggerThan1000).Sum();
         }
 

@@ -1,0 +1,11 @@
+C:\Users\apenate\Desktop\StringCalculator\Persistence.File\obj\Debug\netstandard2.0\Persistence.File.csprojAssemblyReference.cache
+C:\Users\apenate\Desktop\StringCalculator\Persistence.File\obj\Debug\netstandard2.0\Persistence.File.AssemblyInfoInputs.cache
+C:\Users\apenate\Desktop\StringCalculator\Persistence.File\obj\Debug\netstandard2.0\Persistence.File.AssemblyInfo.cs
+C:\Users\apenate\Desktop\StringCalculator\Persistence.File\bin\Debug\netstandard2.0\Persistence.File.deps.json
+C:\Users\apenate\Desktop\StringCalculator\Persistence.File\bin\Debug\netstandard2.0\Persistence.File.dll
+C:\Users\apenate\Desktop\StringCalculator\Persistence.File\bin\Debug\netstandard2.0\Persistence.File.pdb
+C:\Users\apenate\Desktop\StringCalculator\Persistence.File\bin\Debug\netstandard2.0\Model.dll
+C:\Users\apenate\Desktop\StringCalculator\Persistence.File\bin\Debug\netstandard2.0\Model.pdb
+C:\Users\apenate\Desktop\StringCalculator\Persistence.File\obj\Debug\netstandard2.0\Persistence.File.csproj.CopyComplete
+C:\Users\apenate\Desktop\StringCalculator\Persistence.File\obj\Debug\netstandard2.0\Persistence.File.dll
+C:\Users\apenate\Desktop\StringCalculator\Persistence.File\obj\Debug\netstandard2.0\Persistence.File.pdb

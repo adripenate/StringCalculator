@@ -1,0 +1,11 @@
+C:\Users\apenate\Desktop\StringCalculator\UseCases\obj\Debug\netstandard2.0\UseCases.csprojAssemblyReference.cache
+C:\Users\apenate\Desktop\StringCalculator\UseCases\obj\Debug\netstandard2.0\UseCases.AssemblyInfoInputs.cache
+C:\Users\apenate\Desktop\StringCalculator\UseCases\obj\Debug\netstandard2.0\UseCases.AssemblyInfo.cs
+C:\Users\apenate\Desktop\StringCalculator\UseCases\bin\Debug\netstandard2.0\UseCases.deps.json
+C:\Users\apenate\Desktop\StringCalculator\UseCases\bin\Debug\netstandard2.0\UseCases.dll
+C:\Users\apenate\Desktop\StringCalculator\UseCases\bin\Debug\netstandard2.0\UseCases.pdb
+C:\Users\apenate\Desktop\StringCalculator\UseCases\bin\Debug\netstandard2.0\Model.dll
+C:\Users\apenate\Desktop\StringCalculator\UseCases\bin\Debug\netstandard2.0\Model.pdb
+C:\Users\apenate\Desktop\StringCalculator\UseCases\obj\Debug\netstandard2.0\UseCases.csproj.CopyComplete
+C:\Users\apenate\Desktop\StringCalculator\UseCases\obj\Debug\netstandard2.0\UseCases.dll
+C:\Users\apenate\Desktop\StringCalculator\UseCases\obj\Debug\netstandard2.0\UseCases.pdb

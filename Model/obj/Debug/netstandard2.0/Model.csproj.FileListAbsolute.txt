@@ -1,0 +1,8 @@
+C:\Users\apenate\Desktop\StringCalculator\Model\obj\Debug\netstandard2.0\Model.csprojAssemblyReference.cache
+C:\Users\apenate\Desktop\StringCalculator\Model\obj\Debug\netstandard2.0\Model.AssemblyInfoInputs.cache
+C:\Users\apenate\Desktop\StringCalculator\Model\obj\Debug\netstandard2.0\Model.AssemblyInfo.cs
+C:\Users\apenate\Desktop\StringCalculator\Model\bin\Debug\netstandard2.0\Model.deps.json
+C:\Users\apenate\Desktop\StringCalculator\Model\bin\Debug\netstandard2.0\Model.dll
+C:\Users\apenate\Desktop\StringCalculator\Model\bin\Debug\netstandard2.0\Model.pdb
+C:\Users\apenate\Desktop\StringCalculator\Model\obj\Debug\netstandard2.0\Model.dll
+C:\Users\apenate\Desktop\StringCalculator\Model\obj\Debug\netstandard2.0\Model.pdb
