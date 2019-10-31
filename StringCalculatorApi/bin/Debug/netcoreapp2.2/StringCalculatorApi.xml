@@ -4,10 +4,19 @@
         <name>StringCalculatorApi</name>
     </assembly>
     <members>
-        <member name="M:StringCalculatorApi.Controllers.StringCalculatorController.PostStringCalculator(StringCalculatorApi.Models.StringCalculatorModel)">
-            <summary>
-            Devuelve la suma de una cadena que contiene números.
-            </summary>
+        <member name="M:StringCalculatorApi.Controllers.StringCalculatorController.PostStringCalculator(StringCalculatorApi.Models.StringCalculatorRequest)">
+             <summary>
+             Devuelve la suma de una cadena que contiene números.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /PostStringCalculator
+                 {
+                    "numbers": "1,3,4"
+                 }
+            
+             </remarks>
         </member>
     </members>
 </doc>
