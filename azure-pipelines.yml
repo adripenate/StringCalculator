@@ -14,9 +14,9 @@ variables:
 
 steps:
 - task: UseDotNet@2
-  displayName: Usar SDK 3.0.100
+  displayName: Usar SDK 2.2.402
   inputs:
-        version: '3.0.100'
+        version: '2.2.402'
         performMultiLevelLookup: true
 - task: DotNetCoreCLI@2
   displayName: Build
