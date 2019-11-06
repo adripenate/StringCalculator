@@ -61,3 +61,5 @@
 1 -> El resultado es 1
 1 -> El resultado es 1
 1 -> El resultado es 1
+1,2 -> El resultado es 3
+1,2,3 -> El resultado es 6

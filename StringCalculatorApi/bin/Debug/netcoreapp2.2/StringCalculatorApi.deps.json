@@ -26,7 +26,9 @@
         "dependencies": {
           "Microsoft.ApplicationInsights.AspNetCore": "2.8.2",
           "Microsoft.AspNetCore.App": "2.2.0",
+          "Microsoft.AspNetCore.Diagnostics.HealthChecks": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore": "2.2.0",
           "Microsoft.Extensions.PlatformAbstractions": "1.1.0",
           "Microsoft.NETCore.App": "2.2.0",
           "Model": "1.0.0",
@@ -170,6 +172,22 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AI.ServerTelemetryChannel.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore/2.2.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "2.2.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "2.2.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll": {}
         }
       },
       "Microsoft.Extensions.Logging.ApplicationInsights/2.11.0": {
@@ -3625,6 +3643,13 @@
       "sha512": "sha512-x2oW+pHO/CCs3EBLWuNCY5A/gqP0YeUBKVWQE1vuyLwghg79PtO41W+KKZyt7KmRi2Cu35orrwKK+ViOf1SRHQ==",
       "path": "microsoft.applicationinsights.windowsserver.telemetrychannel/2.11.0",
       "hashPath": "microsoft.applicationinsights.windowsserver.telemetrychannel.2.11.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zGpW/aRozEw2qUNDrbgkgTEg9IvxVOXkszOROekwc5DQPaIq/GUVGgKfnqLRDUSk5U22W3FYA5M5/0YDqG990Q==",
+      "path": "microsoft.extensions.diagnostics.healthchecks.entityframeworkcore/2.2.0",
+      "hashPath": "microsoft.extensions.diagnostics.healthchecks.entityframeworkcore.2.2.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging.ApplicationInsights/2.11.0": {
       "type": "package",
