@@ -25,6 +25,8 @@ namespace StringCalculatorApi.Controllers
         ///     }
         ///
         /// </remarks>
+        [ApiVersion("1.0")]
+        [Route("api/v{version:apiVersion}/[controller]")]
         [Produces("application/json")]
         [ProducesResponseType(typeof(StringCalculatorResult), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(ErrorMessage), (int)HttpStatusCode.BadRequest)]
@@ -39,5 +41,23 @@ namespace StringCalculatorApi.Controllers
             }
             return stringCalculatorResult;
         }
+
+        [ApiVersion("2.0")]
+        [Route("api/v{version:apiVersion}/[controller]")]
+        [Produces("application/json")]
+        [ProducesResponseType(typeof(StringCalculatorResult), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(ErrorMessage), (int)HttpStatusCode.BadRequest)]
+        [HttpPost]
+        public ActionResult<StringCalculatorResult> PostStringCalculatora(StringCalculatorRequest request)
+        {
+            var saveAction = new SaveAction(new StringCalculator(), new PersistenceFile(@"..\OperationLog.txt"));
+            var stringCalculatorResult = saveAction.Execute(request.Numbers);
+            if (stringCalculatorResult == null)
+            {
+                return BadRequest(new ErrorMessage() { Error = "Negative numbers not allowed" });
+            }
+            return stringCalculatorResult;
+        }
     }
+
 }
