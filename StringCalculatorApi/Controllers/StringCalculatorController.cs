@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Net;
+﻿using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Model;
 using Persistence.File;
@@ -8,13 +7,18 @@ using UseCases;
 
 namespace StringCalculatorApi.Controllers
 {
-    [Route("api/StringCalculator")]
     [ApiController]
+    [ApiVersion("1")]
+    [ApiVersion("2")]
+    [Produces("application/json")]
+    [ProducesResponseType(typeof(StringCalculatorResult), (int)HttpStatusCode.OK)]
+    [ProducesResponseType(typeof(ErrorMessage), (int)HttpStatusCode.BadRequest)]
     public class StringCalculatorController : ControllerBase
     {
 
         /// <summary>
         /// Devuelve la suma de una cadena que contiene números.
+        /// v1
         /// </summary>
         /// <remarks>
         /// Sample request:
@@ -25,12 +29,8 @@ namespace StringCalculatorApi.Controllers
         ///     }
         ///
         /// </remarks>
-        [ApiVersion("1.0")]
-        [Route("api/v{version:apiVersion}/[controller]")]
-        [Produces("application/json")]
-        [ProducesResponseType(typeof(StringCalculatorResult), (int)HttpStatusCode.OK)]
-        [ProducesResponseType(typeof(ErrorMessage), (int)HttpStatusCode.BadRequest)]
-        [HttpPost]
+        [HttpPost, MapToApiVersion("1")]
+        [Route("/v{version:apiVersion}/Add")]
         public ActionResult<StringCalculatorResult> PostStringCalculator(StringCalculatorRequest request)
         {
             var saveAction = new SaveAction(new StringCalculator(), new PersistenceFile(@"..\OperationLog.txt"));
@@ -42,12 +42,21 @@ namespace StringCalculatorApi.Controllers
             return stringCalculatorResult;
         }
 
-        [ApiVersion("2.0")]
-        [Route("api/v{version:apiVersion}/[controller]")]
-        [Produces("application/json")]
-        [ProducesResponseType(typeof(StringCalculatorResult), (int)HttpStatusCode.OK)]
-        [ProducesResponseType(typeof(ErrorMessage), (int)HttpStatusCode.BadRequest)]
-        [HttpPost]
+        /// <summary>
+        /// Devuelve la suma de una cadena que contiene números.
+        /// V2
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     POST /PostStringCalculator
+        ///     {
+        ///        "numbers": "1,3,4"
+        ///     }
+        ///
+        /// </remarks>
+        [HttpPost, MapToApiVersion("2")]
+        [Route("/v{version:apiVersion}/Add")]
         public ActionResult<StringCalculatorResult> PostStringCalculatora(StringCalculatorRequest request)
         {
             var saveAction = new SaveAction(new StringCalculator(), new PersistenceFile(@"..\OperationLog.txt"));
